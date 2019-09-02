@@ -1,0 +1,176 @@
+.regcomTitle {
+	height: 60px;
+	position: fixed;
+	width: 100%;
+	line-height: 60px;
+	padding: 0 40px;
+	border-bottom: 1px solid #29e;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+	z-index: 99999;
+	background-color: #fff;
+	text-align: center;
+	font-size: 25px;
+}
+
+.regCom {
+	width: 1000px;
+	padding: 60px 0 30px 30px;
+	margin: 0 auto;
+	background-color: #ddd;
+}
+
+body {
+	font-weight: 100
+}
+
+#activityInfoForm > label,
+#activityContentForm > label,
+#activityHolderForm > label {
+	display: flex;
+	align-items: center;
+	line-height: 50px;
+}
+
+#activityInfoForm > label > span:nth-child(1),
+#activityContentForm > label > span:nth-child(1),
+#activityHolderForm > label > span:nth-child(1) {
+	display: inline-block;
+	width: 10px;
+	color: #f00;
+}
+
+#activityInfoForm > label > input {
+	width: 400px;
+}
+
+#activityInfoForm > label > span:nth-child(2),
+#activityContentForm > label span:nth-child(2),
+#activityHolderForm > label span:nth-child(2) {
+	display: inline-block;
+	width: 100px;
+	color: #909090;
+}
+
+.activityInfo,
+.activityContent,
+.activityHolderInfo {
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #29e;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#pic3Img {
+	width: 380px;
+	height: auto;
+	border-radius: 20px;
+	margin: 10px 0;
+}
+
+#pic3 {
+	padding: 8px 15px;
+	color: #fff;
+	background-color: #29e;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+}
+
+.imgDiv div:nth-child(1) {
+	width: 200px;
+	vertical-align: middle;
+	font-size: 16px;
+	color: #909090
+}
+
+.imgDiv div:nth-child(1) span:nth-child(1) {
+	display: inline-block;
+	width: 10px;
+	color: #f00;
+}
+
+.imgDiv div:nth-child(2) {
+	width: 400px;
+	text-align: center;
+}
+
+.activityDesc,
+.activitySchedule {
+	margin: 20px 0;
+}
+
+.activityDesc p,
+.activitySchedule p {
+	width: 100px;
+}
+
+.activityDesc p span:nth-child(1),
+.activitySchedule p span:nth-child(1) {
+	display: inline-block;
+	width: 10px;
+	color: #f00;
+}
+
+#activityDesc,
+#activitySchedule {
+	width: 70%;
+}
+
+#activityContentForm > label > label,
+#activityInfoForm > label > label {
+	line-height: 25px;
+	text-align: center;
+	cursor: pointer;
+}
+
+#activityInfoForm > label > label,
+#activityHolderForm > label > label {
+	
+	line-height: 25px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.priceInput {
+	display: none;
+}
+
+.submitArea {
+	text-align: center;
+}
+
+.submitArea button {
+	padding: 12px 20px;
+	background-color: #29e;
+	color: #fff;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+.w-e-text {
+	background-color: #fff;
+}
+
+#changeAddressBtn,
+#changeClassifyBtn {
+	background-color: #29e;
+	padding: 5px 8px;
+	margin-left: 20px;
+	color: #fff;
+	cursor: pointer;
+}
+
+#activityInfoForm #newAddress {
+	display: none;
+}
+
+#activityInfoForm #newClassify {
+	display: none;
+}
+
+#activityType label,#checkArea label,#chooseCharge label,#lanucherID label{
+	margin-right: 20px
+}

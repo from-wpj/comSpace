@@ -1,0 +1,28 @@
+.mainCenter{margin: 70px auto;}
+.carousel-inner div img{width: 100%;}
+.productMore{background-color: #edeef0;padding: 20px 0 20px 30px}
+.productMore p{font-size: 14px;}
+.productMore p span:nth-child(1){display: inline-block;width: 80px;}
+.productContent{margin: 10px auto 20px}
+.sendMessageBtn{background-color: #29e;color: #fff;margin: 20px auto}
+.mainCenter>p{font-size: 20px;font-weight: 400;}
+.navTitle{width: 100%;height: 40px;line-height: 40px;border-bottom: 0.5px solid #eee;background-color: #fff;position: fixed;z-index: 200}
+.logoArea img{width: 36px;height: 36px;border-radius: 18px;margin: 2px 20px 2px 20px}
+@media (max-width: 1500px){
+  .logoArea{display: none;}
+}
+.top{width: 1000px;margin: 0 auto;}
+.topLeft li{height: 40px; padding: 0 15px;line-height: 38px;border-bottom: 2px solid transparent;cursor: pointer;}
+.active1{border-bottom: 2px solid #F00;}
+.topRight img{width: 30px;height: 30px;margin: 5px;border-radius: 15px;}
+.topRight a{text-decoration: none;margin: 0 5px;cursor: pointer;}
+.topLeft ul li a{text-decoration: none;color: #000;}
+.seaBtn{cursor: pointer;}
+#showContentUs,#showComdesc,#collectBtn,#buyThis{cursor: pointer;background-color: #fff;}
+.contentUs{display: none;}
+.contentUs>div>p{color: #969aa3;font-size: 14px;}
+.contentUs>div>p span:nth-child(1){display: inline-block;width: 80px;}
+.ProductPrice{color: #f00;font-weight: 400}
+.topLeft .active2{border-bottom: 2px solid #29e;}
+.topLeft .active3{background-color: #29e;color: #fff;}
+.companyName{cursor: pointer;}

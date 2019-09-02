@@ -1,0 +1,58 @@
+
+
+@media screen and (max-width: 768px) and (min-width: 480px) {
+.w1200{width:100%;margin: 0 auto;}
+.welcome{margin: 0 10px;}
+.purchase {width: 50%;float: left;}
+.purchase li{margin-left: 5px;}
+.register{float: right;padding-right: 20px;width: 217px;}
+.deeplays{display: none;}
+.btns {width: 40%;margin-left: 30%;margin-top: 0;}
+.deeplay_center {overflow: auto; height: 82vh;}
+::-webkit-scrollbar{display:none;}
+}
+
+@media screen and (max-width: 480px) and (min-width: 375px) {
+	.header{display: none;}
+	.deeplays{display: none;}
+    .deeplay_center{width: 100%;margin: 0;}	
+    .deeplay_center .article {width: 60%;}
+	.deeplay_center .article .titles {width: 55%;}
+	.deeplay_center .article .aide {width: 50%;}
+	.deeplay_center .article .eering {width: 76px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+	.btns {width: 40%;margin-top: 20px;margin-bottom: 10px;margin-left: 12%;}
+    
+}
+
+@media screen and (max-width: 374px) {
+.header{display: none;}
+	.deeplays{display: none;}
+    .deeplay_center{width: 100%;margin: 0;}	
+    .deeplay_center .article {width: 60%;}
+	.deeplay_center .article .titles {width: 55%;}
+	.deeplay_center .article .aide {width: 50%;}
+	.deeplay_center .article img {display: none;}
+	.btns {width: 40%;margin:0 0 10px 40px;}
+	.deeplay_center .article .aides {width: 80%;}
+	.deeplay_center .article .aide {width: 80%;}
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+.w1200{width:100%;margin: 0 auto;}
+.welcome{margin: 0 10px;}
+.purchase {width: 50%;float: left;}
+.purchase li{margin-left: 5px;}
+.register{float: right;padding-right: 20px;width: 217px;}
+.deeplay{width: 100%;}
+.btns {width: 40%;margin-left: 30%;margin-top: 0;}
+.deeplay_left {width: 210px;}
+.deeplay_left .forward thead .th-inner {width: 210px;}
+.deeplay_left .forward .aaa p {width: 85%;}
+.deeplay_center {width: 480px;overflow: auto; height: 153vh;}
+.deeplay_center .article {width: 440px;}
+.deeplay_center .article .titles {width: 55%;}
+.deeplay_center .article .aide {width: 60%;}
+.deeplay_left .manager .buts {width: 190px;margin-left:10px;height: 35px;border-radius: 5px;border: #609DBE 1px solid;font-size: 12px;}
+.deeplay_left .manager .btn {font-size: 12px;}
+   }
+	

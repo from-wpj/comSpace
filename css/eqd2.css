@@ -1,0 +1,338 @@
+html{
+	background-color: #efefef!important;
+}
+.header {
+	width: 100%;
+	height: 33px;
+	background-color: #FFFFFF;
+	position: fixed;
+	z-index: 99;
+}
+
+.w1200 {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.welcome {
+	float: left;
+	font-size: 12px;
+	color: #848484;
+	height: 33px;
+	line-height: 33px;
+	margin-right: 10px;
+}
+
+.purchase {
+	width: 479px;
+	float: left;
+}
+
+.purchase li {
+	float: left;
+	margin-left: 10px;
+	height: 33px;
+	line-height: 33px;
+	font-size: 12px;
+	color: #848484
+}
+
+.purchase li a {
+	color: #848484;
+}
+
+.purchase li a:hover {
+	color: #24A8EA;
+}
+
+.register {
+	width: 311px;
+	float: right;
+}
+
+.register li {
+	float: right;
+	margin-left: 10px;
+	height: 33px;
+	line-height: 33px;
+	font-size: 12px;
+}
+
+.register li a {
+	color: #848484!important;
+	cursor: pointer;
+}
+
+.register li a:hover {
+	color: #24A8EA
+}
+
+.deeplays {
+	width: 100%;
+	position: fixed;
+	z-index: -1;
+}
+
+.deeplay {
+	width: 1200px;
+	margin: 20px auto;
+}
+
+.deeplay_left {
+	width: 299px;
+	height: 540px;
+	margin-top: 31px;
+	float: left;
+}
+
+.deeplay_left .manager {
+	width: 100%;
+	height: 139px;
+	margin-bottom: 13px;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	position: relative;
+	box-shadow: 0 0 15px 0 #808080;
+	visibility: hidden
+}
+
+.deeplay_left .manager p {
+	font-size: 18px;
+	text-align: center;
+	padding-top: 31px;
+	color: #11A8EB;
+}
+
+.deeplay_left .manager .buts {
+	width: 250px;
+	display: flex;
+	margin-left: 25px;
+	height: 35px;
+	border-radius: 5px;
+	border: #609DBE 1px solid;
+	margin-top: 20px;
+	padding-top: 0;
+	overflow: hidden;
+}
+
+.active {
+	color: white!important;
+	background-color: #00A2EA
+}
+
+.deeplay_left .manager span {
+	width: 50%;
+	height: 33px;
+	line-height: 33px;
+	color: #333;
+	cursor: pointer;
+	display: block;
+	font-size: 14px
+}
+
+.deeplay_left .forward {
+	width: 100%;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	box-shadow: 0 0 15px 0 #808080;
+	padding: 0!important;
+}
+
+.deeplay_left .forward thead {
+	width: 280px!important;
+	background-color: #00A2EA;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.deeplay_left .forward thead .th-inner {
+	padding-left: 30px;
+	color: #FFFFFF;
+	font-size: 16px;
+	width: 297px;
+}
+
+.table:not(.table-condensed) > tbody > tr > td {
+	padding: 0!important;
+}
+
+.deeplay_left .forward .aaa {
+	width: 100%;
+	height: 55px;
+	cursor: pointer;
+	padding: 0!important;
+	display: flex;
+	align-items: center;
+}
+
+.deeplay_left .forward .aaa a {
+	display: inline-block;
+	height: 55px;
+	line-height: 55px;
+	width: 100%;
+}
+
+.deeplay_left .forward .aaa p {
+	color: #7A7A7A;
+	font-size: 16px;
+	float: left;
+	width: 87%;
+	text-align: left;
+	padding-left: 30px;
+}
+
+.deeplay_left .forward .aaa span {
+	float: right;
+	margin-right: 15px;
+	color: #999999;
+}
+
+.deeplay_left .forward .list {
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom: none
+}
+
+.deeplay_right {
+	width: 280px;
+	height: 500px;
+	right: 0;
+	margin-top: 35px;
+	float: right;
+}
+
+.deeplay_right .broadcast {
+	width: 280px;
+	height: 150px;
+	margin-bottom: 21px;
+	border-radius: 5px;
+}
+
+.deeplay_right .broadcast p {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	background: url(../img/8.png) left no-repeat;
+	padding-left: 5px;
+	z-index: 10;
+	color: #FFFFFF;
+}
+
+.deeplay_right .broadcast img {
+	width: 100%;
+	height: 100%;
+}
+
+.alone {
+	width: 590px;
+	margin: 0 auto
+}
+
+.deeplay_center {
+	width: 579px;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	float: left;
+	margin-top: 50px;
+	margin-left: 15px;
+}
+
+.deeplay_center .article {
+	width: 536px;
+	height: 129px;
+	border-bottom: 1px solid #E6E6E6;
+	margin-bottom: 25px;
+	margin-left: 20px;
+	position: relative;
+}
+
+.deeplay_center .article .titles {
+	width: 70%;
+	float: left;
+	height: 24px;
+	font-weight: 800;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	cursor: pointer;
+	margin-bottom: 0!important;
+}
+
+.deeplay_center .article .titles:hover {
+	text-decoration: underline;
+}
+
+.deeplay_center .article .aide {
+	width: 362px;
+	font-size: 14px;
+	color: #A1A1A1;
+	line-height: 25px;
+	float: left;
+	margin-bottom: 0!important;
+	height: 50px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	cursor: pointer;
+}
+
+.deeplay_center .article .aide a {
+	display: block;
+	overflow: hidden;
+}
+
+.deeplay_center .article img {
+	width: 145px;
+	height: 97px;
+	border-radius: 5px;
+	float: right;
+}
+
+.deeplay_center .article .time {
+	font-size: 12px;
+	color: #A7A7A7;
+	position: absolute;
+	left: 0;
+	bottom: 28px;
+}
+
+.deeplay_center .article .eering {
+	font-size: 12px;
+	margin-left: 30px;
+	color: #44BBF0;
+	cursor: pointer;
+	position: absolute;
+	left: 80px;
+	bottom: 28px;
+}
+
+.deeplay_center .article .aides {
+	width: 100%;
+	font-size: 14px;
+	color: #A1A1A1;
+	line-height: 25px;
+	float: left;
+	margin-bottom: 0!important;
+	height: 50px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	cursor: pointer;
+}
+
+.btns {
+	width: 297px;
+	height: 37px;
+	border-radius: 15px;
+	background-color: #A5A5A5;
+	color: #FFFFFF;
+	text-align: center;
+	border: none;
+	font-size: 14px;
+	margin: 26px 0 30px 144px;
+	cursor: pointer;
+}

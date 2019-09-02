@@ -1,0 +1,195 @@
+.middler {
+	width: 72%;
+	float: left;
+	min-width: 640px;
+	margin-left: 3%;
+}
+
+.inforContent p {
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.information {
+	color: white;
+	margin-top: 10px;
+}
+
+.inforContent {
+	padding: 26px 28px;
+	background-color: rgb(17, 48, 109);
+}
+
+.lybox {
+
+	height: 404px;
+	background-color: white;
+}
+
+.textarea {
+	width: 90%;
+	height: 200px;
+	background-color: rgb(238, 238, 238);
+	margin: 20px 5%;
+	text-align: left;
+	padding: 20px 0 0 20px;
+
+}
+
+.labtext {
+	font-size: 16px;
+	color: rgb(106, 106, 106);
+	padding: 20px 0px 10px 5%;
+	border-bottom: 1px solid lavender;
+}
+
+.submit {
+	/* background-color: rgb(0, 54, 138); */
+	width: 120px;
+	height: 40px;
+	text-align: center;
+	color: white;
+	border: none;
+	margin-left: 5%;
+}
+
+.companyList {
+	width: 250px
+}
+
+.cpltl {
+	float: left;
+
+}
+
+.cpltr {
+	float: left;
+	width: 170px;
+	height: 40px;
+	margin-left: 10px;
+
+}
+
+.cpltr p {
+	width: 100%;
+	height: 100%;
+	text-align: left;
+}
+
+
+.collect {
+	cursor: pointer;
+}
+
+#comSpace {
+	background-color: white;
+	margin-top: 20px;
+}
+
+#comSpace thead {
+	display: none;
+}
+
+
+#comSpace tbody {
+	width: 90%;
+	display: block;
+	margin-left: 5%;
+}
+
+#comSpace tbody tr td {
+	display: block;
+}
+
+#comSpace tbody tr {
+	display: block;
+	border-bottom: 1px solid lavender;
+	padding: 20px 0;
+	
+}
+
+.comt {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.comimg img {
+	width: 271px;
+	height: 184px;
+}
+
+.comimg {
+	margin-top: 10px;
+}
+
+.comt div p:nth-child(1) {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.comt div p:nth-child(2) {
+	color: #CCCCCC;
+}
+
+.see {
+	padding: 7px 20px;
+	border: 1px solid #0a49ac;
+	color: #0A49AC;
+	font-size: 14px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.comb {
+	margin-top: 20px;
+}
+
+.comb p {
+	color: #7f7f7f;
+	overflow: hidden;
+	/* 内容超出宽度时隐藏超出部分的内容 */
+	text-overflow: ellipsis;
+	/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	/*定义的数字为显示的行数*/
+	-webkit-box-orient: vertical;
+}
+
+.fixed-table-pagination {
+	background-color: white;
+	display: flex;
+	justify-content: space-around;
+}
+
+.pageBtnBox {
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+	background-color: white;
+}
+
+.pageBtn {
+	width: 20%;
+	font-size: 14px;
+}
+
+
+p {
+	word-break: keep-all;
+	/* 不换行*/
+	white-space: nowrap;
+	/* 不换行 */
+	overflow: hidden;
+	/* 内容超出宽度时隐藏超出部分的内容 */
+	text-overflow: ellipsis;
+	/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+}
+
+section#nav-test
+{
+    height:24px!important
+}

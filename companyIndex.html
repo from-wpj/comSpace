@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="img/pic.ico" type="image/x-icon"/>
+  <title>企业主页</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap-table/1.11.1/bootstrap-table.min.css">
+  <link rel="stylesheet" href="css/skin/default/layer.css">
+  <link rel="stylesheet" href="css/public.css">
+  <link rel="stylesheet" href="css/companyIndex.css?version=20180829">
+</head>
+<body>
+  <div class="navTitle clearfix">
+          <div class="logoArea pull-left">
+              <img src="" alt="">
+              <span class="companyName"></span>
+          </div>
+    <div class="top clearfix">
+          <div class="topLeft pull-left">
+                <ul class="clearfix">
+                    <li class="pull-left active3" id="rizhi">企业日志</li>
+                    <li class="pull-left" id="goodInfo">产品信息</li>
+                    <li class="pull-left" id="comInfo">企业信息</li>
+                    <li class="pull-left" id="comClture">企业文化</li>
+                    <li class="pull-left" id="comCommand">采购需求</li>
+                    <li class="pull-left" id="comMessage">企业留言</li>
+                </ul>
+          </div>
+          <div class="topRight pull-right">
+                <img src="" alt="">
+                <a class="name" href="qiyeInfo.html"></a>
+                <a class="quitOut">退出</a>
+                <a class="loginBtn">登录</a>
+          </div>
+    </div>
+  </div>
+  <!-- 内容 -->
+    <div class="main" id="main">
+      <div class="rizhiDiv clearfix" id="rizhiDiv">
+          <div class="lookRizhi"></div>
+          <p class="clearfix">
+            <input type="button" class="form-control pull-left" id="rizhiPrveBtn" value="上一页">
+            <input type="button" class="form-control pull-right" id="rizhiNextBtn" value="下一页">
+          </p>
+      </div>
+      <!-- 企业信息 -->
+      <div class="comInfodiv clearfix" id="comInfodiv">
+          <div class="mainLeft pull-left">
+            <ul  class="clearfix">
+              <li class="comDesc liactive"><a href="#desc">企业简介</a></li>
+              <li class="ComEquipment"><a href="#equipment">设备展示</a></li>
+              <li class="ComOrganization"><a href="#zuzhid">组织机构</a></li>
+              <li class="ComTeam"><a href="#team">团队介绍</a></li>
+              <li class="ComImage"><a href="#imgShow">企业图片</a></li>
+              <li class="ComCotact"><a href="#content">联系我们</a></li>
+            </ul>
+          </div>
+          <div class="mainRight pull-right">
+              <div class="comDescDiv clearfix" id="desc">
+                <h2 class="titleC">企业简介</h2>
+                <div class="comInfoshow"></div>
+              </div>
+              <div class="ComEquipmentDiv clearfix" id="equipment">
+                <h2 class="titleC">设备展示</h2>
+              </div>
+              <div class="ComOrganizationDiv clearfix" id="zuzhid">
+                <h2 class="titleC">组织机构</h2>
+              </div>
+              <div class="ComImageDiv clearfix" id="imgShow">
+                <h2 class="titleC">企业图片</h2>
+              </div>
+              <div class="ComTeamDiv clearfix" id="team">
+                <h2 class="titleC">团队介绍</h2>
+              </div>
+              <div class="ComCotactDiv clearfix" id="content">
+                <h2 class="titleC">联系我们</h2>
+                <p><span>姓名</span><span class="Contacts"></span></p>
+                <p><span>手机</span><span class="ContactNumber"></span></p>
+                <p><span>座机</span><span class="SeatMachine"></span></p>
+                <p><span>邮箱</span><span class="Email"></span></p>
+                <p><span>地址</span><span class="Address"></span></p>
+              </div>
+          </div>
+      </div>
+      <div class="goodInfoDiv clearfix" id="goodInfoDiv">
+       <!--  <div class="input-group input-group-lg searchDiv">
+                  <input type="text" class="form-control inputVal">
+                  <span class="input-group-addon seaBtn">搜索产品</span>
+          </div> -->
+          <table id="productList">
+                     <thead>
+                         <tr>
+                             <th data-field="image"></th>
+                             <th data-field="more"></th>
+                          </tr>
+                      </thead>
+               </table><br>
+               <p class="clearfix">
+                <input type="button" class="form-control chanpinPrve pull-left" value="上一页">
+                <input type="button" class="form-control chanpinNext pull-right" value="下一页">
+               </p>
+      </div>
+      <div class="comCltureDiv clearfix" id="comCltureDiv">
+          <div class="mainLeft pull-left">
+            <ul>
+              <li class="ComCoreValues liactive"><a href="#hexin">核心价值</a></li>
+              <li class="ComActitivies"><a href="#leader">领导活动</a></li>
+              <li class="ComEvent"><a href="#xianjin">先进事迹</a></li>
+              <li class="ComGoodStaff"><a href="#honer">荣耀墙</a></li>
+            </ul>
+          </div>
+          <div class="mainRight pull-right">
+                <div class="ComCoreValuesDiv clearfix" id="hexin">
+                  <h2 class="titleC">核心价值</h2>
+                </div>
+                <div class="ComActitiviesDiv" id="leader">
+                  <p class="clearfix">
+                    <h2 class="titleC pull-left">领导活动</h2>
+                    <span class="leaderMore pull-right">更多</span>
+                  </p>
+                  <ul></ul>
+                </div>
+                <div class="ComEventDiv" id="xianjin">
+                  <p class="clearfix">
+                    <h2 class="titleC pull-left">先进事迹</h2>
+                    <span class="goodThingsMore pull-right">更多</span>
+                  </p>
+                  <ul></ul>
+                </div>
+                <div class="ComGoodStaffDiv" id="honer">
+                  <h2 class="titleC">荣耀墙</h2>
+                </div>
+                <!-- 全部领导活动 -->
+                <div class="laederActivtiesMore" id="laederActivtiesMore">
+                  <h2 class="titleC">所有领导活动</h2>
+                  <ul></ul>
+                  <input type="button" class="form-control loadNext" value="加载更多">
+                  <input type="button" class="form-control loadNoMore" value="已全部加载">
+                </div>
+                <!-- 全部先进事迹 -->
+                <div class="goodThingMore" id="goodThingMore">
+                  <h2 class="titleC">所有先进事迹</h2>
+                  <ul></ul>
+                  <input type="button" class="form-control loadGoodNext" value="加载更多">
+                  <input type="button" class="form-control loadGoodNoMore" value="已全部加载">
+                </div>
+          </div>
+      </div>
+      <div class="comMessageDiv clearfix" id="comMessageDiv">
+      <div>
+            <textarea name="" id="leaveMessage" cols="30" rows="3" class="form-control" placeholder="请输入留言内容"></textarea>
+            <input type="button" class="form-control" value="发送留言" id="sendMessageBtn">
+      </div>
+      <div class="messageList">
+      </div>
+      </div>
+      <!-- 采购需求 -->
+      <div class="comCommandDiv" id="comCommandDiv">
+        <table id="comDemandList">
+                     <thead>
+                         <tr>
+                             <th data-field="more"></th>
+                          </tr>
+                      </thead>
+               </table><br>
+               <p class="clearfix">
+                <input type="button" class="form-control demandPrve pull-left" value="上一页">
+                <input type="button" class="form-control demandNext pull-right" value="下一页">
+               </p>
+      </div>
+    </div>
+    <!-- 网页右面提示 -->
+  <div class="leaveMessage">
+        <div class="backTop">
+              <span class="glyphicon glyphicon-arrow-up"></span>
+        </div>
+        <div class="weChat">
+              <span class="glyphicon glyphicon-qrcode"></span>
+        </div>
+        <div class="downloadDiv">
+              <span class="glyphicon glyphicon-cloud-download"></span>
+        </div>
+          <div class="message">
+              <span class="glyphicon glyphicon-user"></span>
+        </div>
+        <div class="collection2">
+              <span class="glyphicon glyphicon-pencil"></span>
+        </div>
+    </div>
+    <div class="addMessage">
+      <textarea name="" id="messageContent" cols="30" rows="5" class="form-control" placeholder="请输入留言内容"></textarea>
+    </div>
+  <!-- 网页底部公用 -->
+  <div class="Link">
+       <p class="text-center"><small>Copyright &copy;郑州易企点信息科技有限公司&nbsp;&nbsp;
+       <a target="_blank" href="http://www.miitbeian.gov.cn" class="text-muted">豫ICP备17002858号</a></small></p>
+  </div>
+  <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="https://ciphertrick.com/demo/jquerysession/js/jquerysession.js"></script>
+  <script type="text/javascript" src="https://cdn.bootcss.com/layer/3.1.0/layer.js"></script>
+  <script type="text/javascript" src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdn.bootcss.com/bootstrap-table/1.11.1/bootstrap-table.js"></script>
+  <script type="text/javascript" src="js/bootstrap-table-zh-CN.min.js"></script>
+  <script type="text/javascript" src="js/wangEditor.js"></script>
+  <script type="text/javascript" src="js/change.js"></script>
+  <script type="text/javascript" src="js/companyIndex.js?version=20180918"></script>
+  <script type="text/javascript" src="js/demand.js?version=20180829"></script>
+</body>
+</html>

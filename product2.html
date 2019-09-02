@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta http-equiv="Cache-Control" CONTENT="no-cache">
+  <link rel="icon" href="img/pic.ico" type="image/x-icon"/>
+  <title>产品详情</title>
+   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css">
+  <link rel="stylesheet" href="css/skin/default/layer.css">
+  <!-- <link rel="stylesheet" href="../css/public.css"> -->
+  <link rel="stylesheet" href="css/product2.css?version=20180810">
+</head>
+<body>
+  <div class="navTitle clearfix">
+          <div class="logoArea pull-left">
+              <img src="" alt="">
+              <span class="companyName"></span>
+          </div>
+    <div class="top clearfix">
+          <div class="topLeft pull-left">
+                <ul class="clearfix">
+                    <li class="pull-left" id="rizhi">企业日志</li>
+                    <li class="pull-left active3" id="goodInfo">产品信息</li>
+                    <li class="pull-left" id="comInfo">企业信息</li>
+                    <li class="pull-left" id="comClture">企业文化</li>
+                    <li class="pull-left" id="comCommand">采购需求</li>
+                    <li class="pull-left" id="comMessage">企业留言</li>
+                </ul>
+          </div>
+          <div class="topRight pull-right">
+                <img src="" alt="">
+                <a class="name" href="qiyeInfo.html"></a>
+                <a class="quitOut">退出</a>
+          </div>
+    </div>
+  </div>
+<div class="main">
+<div class="mainLeft col-lg-3 col-md-3 col-sm-2 col-xs-0"></div>
+<div class="mainCenter col-lg-6 col-md-6 col-sm-8 col-xs-12">
+          <div class="imgList">
+                    <div id="myCarousel" class="carousel slide">
+                      <!-- 轮播（Carousel）指标 -->
+                      <ol class="carousel-indicators">
+                      </ol>
+                      <!-- 轮播（Carousel）项目 -->
+                      <div class="carousel-inner"></div>
+                      <!-- 轮播（Carousel）导航 -->
+                      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+          </div>
+          <div class="productMore">
+              <p><span>产品名称</span><span class="ProductName"></span></p>
+              <p><span>产品种类</span><span class="ProductType"></span></p>
+              <p><span>产品单价</span><span class="ProductPrice"></span>元(仅供参考)</p>
+              <p><span>仓储量</span><span class="Stock"></span>件(仅供参考)</p>
+              <p><span>发货周期</span><span class="DeliveryCycle"></span>天(仅供参考)</p>
+              <p><span>发货地</span><span class="area"></span></p>
+              <p><span>公司名称</span><span class="companyName"></span> <span style="color:#f00">(点击公司名称访问该公司企业空间)</span></p>
+          </div>
+          <p>产品介绍</p>
+          <div class="productContent"></div>
+          <p>留言</p>
+          <div>
+            <textarea name="" id="leaveMessage" cols="30" rows="5" class="form-control" placeholder="请留言"></textarea>
+            <input type="button" class="form-control sendMessageBtn" value="发送留言">
+          </div>
+          <ul class="nav nav-pills nav-justified">
+                              <li id="showComdesc" class="active"><a>公司介绍</a></li>
+                              <li id="showContentUs"><a >联系我们</a></li>
+                              <li id="collectBtn"><a >收藏</a></li>
+                              <li id="visitors"><a >访客</a></li>
+                              <li id="buyThis"><a >采购</a></li>
+                        </ul>
+      <!-- 分享模块 -->
+      <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_sqq" data-cmd="sqq"></a><a href="#" class="bds_tieba" data-cmd="tieba"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+ <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{},"image":{"viewList":["fbook","twi","linkedin","qzone","tsina","douban","weixin","evernotecn"],"viewText":"分享到：","viewSize":"16"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js'];</script>
+          <div class="ComShow">
+          <p>公司介绍</p>
+              <div></div>
+          </div>
+          <div class="contentUs">
+            <p>联系我们</p>
+            <div>
+                <p><span>姓名</span><span class="Contacts"></span></p>
+                <p><span>手机</span><span class="ContactNumber"></span></p>
+                <p><span>座机</span><span class="SeatMachine"></span></p>
+                <p><span>邮箱</span><span class="Email"></span></p>
+                <p><span>地址</span><span class="Address"></span></p>
+            </div>
+          </div>
+</div>
+<div class="mainRight col-lg-3 col-md-3 col-sm-2 col-xs-0"></div>
+</div>
+  <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.bootcss.com/layer/3.1.0/layer.js"></script>
+  <script type="text/javascript" src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/ajaxfileupload.js"></script>
+  <script type="text/javascript" src="js/change.js"></script>
+  <script type="text/javascript" src="js/product2.js?version=20180817"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+        <meta http-equiv="Cache-Control" content="no-cache"/>
+        <link rel="icon" href="img/logo.png" type="image/x-icon"/>
+        <title>日志详情</title>
+        <link rel="stylesheet" href="css/reset.css"/>
+        <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/skin/default/layer.css"/>
+        <link rel="stylesheet" href="css/public.css"/>
+        <link rel="stylesheet" href="css/rizhiDetails.css?version=201807026"/>
+    </head>
+    <body>
+        <div class="navTitle">
+            <div class="navContent">
+                <div class="logoArea ">
+                    <img src="" alt=""/>
+                    <span class="companyName">  </span>
+                </div>
+                <div class="topRight ">
+                    <img src=" " alt=""/>
+                    <span class="name"> </span>
+                    <span class="quitOut">退出</span>
+                </div>
+            </div>
+        </div>
+        <div class="mainText clearfix">
+            <div class="mainCenter">
+                <div class="title">
+                    <p> </p>
+                    <p class="clearfix">
+                        <span class="LTime">    </span>
+                        <a>
+                            <span class="glyphicon glyphicon-eye-open" title="阅读量"> </span>
+                            <span class="Read"> </span>
+                        </a>
+                        <a>
+                            <span class="glyphicon glyphicon-comment" title="评论">   </span>
+                            <span class="Dicuss">   </span>
+                        </a>
+                        <a>
+                            <span class="glyphicon glyphicon-heart" title="喜欢"> </span>
+                            <span class="liked">    </span>
+                        </a>
+                        <a class="rePort pull-right">
+                            <span class="glyphicon glyphicon-warning-sign" title="举报">  </span>
+                            <span class="jubao">    </span>
+                            举报
+                        </a>
+                    </p>
+                </div>
+                <div class="content">   </div>
+                <div class="show-footer clearfix">
+                    <div class="reportDetails">
+                        <form action="" id="reportForm">
+                            <label for="input1">
+                                <input type="radio" name="circle" value="广告及垃圾信息" checked="checked"  id="input1"/>
+                                <span>广告及垃圾信息</span>
+                            </label>
+                            <br/>
+                            <br/>
+                            <label for="input2">
+                                <input type="radio" name="circle" value="抄袭或未授权转载"  id="input2"/>
+                                <span>抄袭或未授权转载</span>
+                            </label>
+                            <br/>
+                            <br/>
+                            <label for="input3">
+                                <input type="radio" name="circle" value="其他"  id="input3"/>
+                                <span>其他</span>
+                            </label>
+                            <br/>
+                            <br/>
+                            <textarea placeholder="写下举报的详情情况（选填）" class="form-control" id="reason"> </textarea>
+                        </form>
+                    </div>
+                    <div class="circleMore">
+                        <button class="collection">
+                            <span class="glyphicon glyphicon-bookmark"> </span>
+                            收藏
+                        </button>
+                        <button class="addLike">
+                            <span class="glyphicon glyphicon-heart">    </span>
+                            喜欢
+                        </button>
+                    </div>
+                    <!--    <li class="pull-left">动态</li>
+                                                                                  <li class="pull-left">圈子</li>
+                                                                                  <li class="pull-left">企业</li>
+                                                                                  <li class="pull-left">会议</li>
+                                                                                  <li class="pull-left">周计划</li>
+                                                                                  <li class="pull-left">月计划</li>
+                                                                                  <li class="pull-left">未开发</li> -->
+                    <div class="bdsharebuttonbox">
+                        <a href="#" class="bds_more" data-cmd="more">   </a>
+                        <a href="#" class="bds_qzone" data-cmd="qzone"> </a>
+                        <a href="#" class="bds_tsina" data-cmd="tsina"> </a>
+                        <a href="#" class="bds_sqq" data-cmd="sqq"> </a>
+                        <a href="#" class="bds_tieba" data-cmd="tieba"> </a>
+                        <a href="#" class="bds_weixin" data-cmd="weixin">   </a>
+                    </div>
+                    <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{},"image":{"viewList":["fbook","twi","linkedin","qzone","tsina","douban","weixin","evernotecn"],"viewText":"分享到：","viewSize":"16"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js'];</script>
+                    <div class="lanchComment">
+                        <textarea placeholder="写下你的评论..." class="form-control" id="WriterComment">  </textarea>
+                        <div class="lanuchBtnList clearfix">
+                            <button class="yesBtn pull-right">发送</button>
+                        </div>
+                    </div>
+                    <div class="commentList">   </div>
+                    <button class="loadMoreComment">加载更多评论</button>
+                    <button class="noMoreBtn">已全部加载</button>
+                    <div class="delDisTable">确定删除该评论及其子评论</div>
+                    <div class="delDisTable2">确定删除该评论</div>
+                </div>
+            </div>
+        </div>
+        <div class="mainRight pull-right">
+            <p class="qTitle">
+                <span  class="glyphicon glyphicon-home">    </span>
+                企业资料
+            </p>
+            <div class="comInfo">
+                <p>
+                    <span>所属行业</span>
+                    <span class="industry"> </span>
+                </p>
+                <p>
+                    <span>注册地址</span>
+                    <span class="address">  </span>
+                </p>
+                <p>
+                    <span>服务内容</span>
+                    <span class="service">  </span>
+                </p>
+                <p>
+                    <span>年营业额</span>
+                    <span class="turnover"> </span>
+                    万元
+                </p>
+            </div>
+        </div>
+        <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.bootcss.com/layer/3.1.0/layer.js"></script>
+        <script type="text/javascript" src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript">    function onLogin(userInfo) {    localStorage.GHY_login=userInfo;  }</script>
+        <script type="text/javascript" src="js/change.js"></script>
+        <script type="text/javascript" src="js/rizhiDetails.js?version=201807026"></script>
+    </body>
+</html>

@@ -1,0 +1,355 @@
+body {
+	background-color: rgb(238, 238, 238);
+}
+
+.contBox {
+	padding: 0 !important;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background-color: rgb(238, 238, 238);
+
+}
+
+.content {
+	width: 60%;
+	margin-top: 35px;
+	min-width: 1142px;
+}
+
+.contentl {
+	width: 25%;
+	float: left;
+	min-width: 285px;
+}
+
+.contentr {
+	width: 72%;
+	float: left;
+	min-width: 640px;
+	margin-left: 3%;
+}
+
+.modeCount ul {
+	display: flex;
+	flex-wrap: wrap;
+	color: white;
+}
+
+.modeCount ul li {
+	list-style: none;
+	width: 50%;
+	min-width: 50%;
+	height: 60px;
+	cursor: pointer;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.modeCount ul li p:nth-child(2) {
+	font-size: 14px;
+}
+
+.rzcount,
+.fkconut,
+.lycount,
+.cpcount {
+	font-size: 30px;
+}
+
+
+.js {
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.information {
+	color: white;
+	margin-top: 10px;
+}
+
+.inforContent {
+	padding: 26px 28px;
+	background-color: rgb(17, 48, 109);
+}
+
+.inforner {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+}
+
+.inforner p {
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.comlogo {
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+
+.comCall {
+	text-align: center;
+	cursor: pointer;
+}
+.comCall:hover{
+	text-decoration: underline;
+}
+
+.comType,
+.comAdress {
+	display: flex
+}
+
+.clab {
+	width: 90px;
+}
+
+.ca,
+.ct {
+	width: 160px;
+}
+
+.companyList {
+	width: 250px
+}
+
+.cpltl {
+	float: left;
+}
+
+.cpltr {
+	float: left;
+	width: 170px;
+	height: 40px;
+	margin-left: 10px;
+}
+
+.cpltr p {
+	width: 100%;
+	height: 100%;
+	text-align: left;
+}
+
+#companyTable {
+	background-color: white;
+	/* width: 25%; */
+	min-width: 100%;
+}
+
+#companyTable thead {
+	width: 100%;
+	border-radius: 4px;
+	overflow: hidden;
+	display: inline-table;
+}
+
+#companyTable thead tr {
+	background-color: #00368a;
+	width: 100%;
+	color: white;
+	border-radius: 10px;
+}
+
+#companyTable tr {
+	background-color: white;
+	width: 100%;
+	cursor: pointer;
+}
+
+.bgbox {
+	background-color: rgb(238, 238, 238);
+	height: 20px;
+}
+
+.fixed-table-body {
+	/* 去除滚动条 */
+	overflow: visible !important;
+}
+
+.logoimg {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+
+.comName {
+	color: rgb(106, 106, 106);
+	line-height: 60px;
+	word-break: keep-all;
+	/* 不换行*/
+	white-space: nowrap;
+	/* 不换行 */
+	overflow: hidden;
+	/* 内容超出宽度时隐藏超出部分的内容 */
+	text-overflow: ellipsis;
+	/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+}
+
+.collect {
+	cursor: pointer;
+}
+
+/* contentr */
+#comsinfor tbody {
+	background-color: rgb(238, 238, 238);
+}
+
+#comsinfor thead {
+	display: none !important;
+}
+
+#comsinfor tbody tr {
+	display: block;
+	background-color: white;
+	margin-top: 20px;
+	padding: 0 0 20px 0;
+}
+
+#comsinfor tbody tr:first-child {
+	margin-top: 0;
+}
+
+.logBox {
+	/* width: 90%;
+	margin-left: 5%; */
+}
+
+.logBox a {
+	cursor: pointer;
+	color: #007bff !important;
+	font-size: 14px;
+}
+
+.logBox a:hover {
+	text-decoration: underline !important;
+}
+
+.logt {
+	display: flex;
+	align-items: center;
+}
+
+.logt img {
+	padding: 10px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+
+.logt div {
+	line-height: 25px;
+	font-size: 14px;
+}
+
+.logb {
+	font-size: 14px;
+	margin-left: 60px;
+}
+
+.logb p {
+	overflow: hidden;
+	/* 内容超出宽度时隐藏超出部分的内容 */
+	text-overflow: ellipsis;
+	/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	/*定义的数字为显示的行数*/
+	-webkit-box-orient: vertical;
+	padding-right: 30px;
+
+}
+
+.logb img {
+	width: 400px;
+	height: 260px;
+	border-radius: 10px;
+	margin-top: 20px;
+}
+
+.logb div {
+	/* display: flex; */
+}
+
+.pageBtnBox {
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+	background-color: white;
+}
+
+.pageBtn {
+	width: 20%;
+	font-size: 14px;
+}
+
+.labtext {
+	font-size: 16px;
+	color: rgb(106, 106, 106);
+	padding: 20px 0px 10px 5%;
+	border-bottom: 1px solid lavender;
+}
+
+/* 头部 */
+.navbox{
+	width: 100%;
+	background-color: #fafafa;
+	height: 47px;
+	line-height: 47px;
+	display: flex;
+	justify-content: center;
+	
+}
+.navTitle {
+	width: 1140px;
+	z-index: 999999;
+	border-bottom: 0.5px solid #eee;
+	display: flex;
+}
+
+.navTitle ul {
+	z-index: 20;
+	padding: 0;
+	display: flex;
+}
+.listbtn{
+	margin: 0 auto;
+	margin-right: 0;
+}
+
+.navTitle>ul>li,.listbtn>li {
+	line-height: 47px;
+	text-align: center;
+	cursor: pointer;
+	color: #848484;
+	list-style: none;
+	float: left;
+
+}
+
+.navTitle>ul>p {
+	color: #848484;
+}
+
+.navTitle>ul>li>a {
+	text-decoration: none;
+	color: #848484;
+	width: 100%;
+	padding: 0 15px;
+	border-right: 1px solid #c8c8c8;
+	font-size: 14px;
+	font-family: "微软雅黑";	
+}
+
+.listTitle li:last-child a,.listbtn li:last-child a{
+	border: none;
+}
+
+
+.fixed-table-container {
+	border: none!important;
+}

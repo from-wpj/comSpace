@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="icon" href="img/logo.png" type="image/x-icon" />
+		<title>企业空间</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/skin/default/layer.css" />
+		<link rel="stylesheet" href="css/theme/default/laydate.css" />
+		<link rel="stylesheet" href="css/updatacompanyInfo.css?version=201807021" />
+		<link rel="stylesheet" href="css/bootstrap-select.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+	</head>
+	<body>
+		<div class="regcomTitle">修改企业空间信息</div>
+		<div class="regCom">
+			<form action="" name="myForm" novalidate class="form-inline" id="comInfo">
+				<p>企业基本信息</p>
+				<label for="">
+					<span class="comName">品牌名称:</span>
+					<input type="text" class="Brand form-control" placeholder="品牌名称" />
+				</label>
+				<br />
+				<br />
+				<label for="">
+					<span class="comName">产品商标:</span>
+					<input type="text" class="Trademark form-control" placeholder="产品商标" />
+				</label>
+				<br />
+				<br />
+				<label for="">
+					<span class="">成立时间:</span>
+					<input type="text" class="EstablishTime form-control" placeholder="成立时间" id="timeSet" />
+				</label>
+				<br />
+				<br />
+				<label for="">
+					<span class="">注册资本:</span>
+					<input type="text" class="RegisteredCapital form-control" placeholder="注册资本" />
+					<span class="unit">万元</span>
+				</label>
+				<br />
+				<br />
+				<label for="">
+					<span class="comName">经营范围:</span>
+					<input type="text" class="ScopeOfOperation form-control" placeholder="经营范围" />
+				</label>
+				<br />
+				<br />
+				<label for="">
+					<span class="comName">年营业额:</span>
+					<input type="text" class="Turnover form-control" placeholder="年营业额" />
+					<span class="unit">万元</span>
+				</label>
+				<br />
+				<br />
+				<label for="">
+					<span class="">登记机关:</span>
+					<input type="text" class="Register form-control" placeholder="登记机关" />
+				</label>
+				<br />
+				<br />
+				<label for="">
+					<span class="">经营期限:</span>
+					<input type="text" class="BusinessTime form-control" placeholder="经营期限" />
+					<span class="unit2">年</span>
+				</label>
+				<br />
+				<br />
+				<label for="">
+					<span class="">管理体系认证:</span>
+					<input type="text" class="Authentication form-control" placeholder="" />
+				</label>
+				<br />
+				<br />
+				<label for="" class="oldType">
+					<span class="">经营模式(原来的):</span>
+					<input type="text" class="usertypeOld form-control" placeholder="" />
+					<input type="button" class="changType form-control" value="修改" />
+				</label>
+				<br />
+				<br />
+				<label for="" class="clearfix newType">
+					<span class="comDutyman pull-left">经营模式(可多选):</span>
+					<div class="pull-left ">
+						<select id="usertype" name="usertype" class="selectpicker show-tick form-control Management" multiple
+						 data-live-search="false">
+							<option value="OEM(代加工)">OEM(代加工)</option>
+							<option value="ODM(可自主设计能力、可为客代设计)">ODM(可自主设计能力、可为客代设计)</option>
+							<option value="OBM(有自主品牌)">OBM(有自主品牌)</option>
+							<option value="OSM(有原创和研发能力)">OSM(有原创和研发能力)</option>
+						</select>
+					</div>
+				</label>
+				<br />
+				<br />
+				<label for="">
+					<span class="">厂房面积:</span>
+					<input type="text" class="WorkshopArea form-control" placeholder="厂房面积" />
+					<span class="unit3">平方米</span>
+				</label>
+				<br />
+				<br />
+				<label for="">
+					<span class="">客户群体:</span>
+					<input type="text" class="CustomerGroup form-control" placeholder="客户群体" />
+				</label>
+				<br />
+				<br />
+				<label for="" class="oldHangye">
+					<span class="">主要行业:</span>
+					<input type="text" id="mainHangye" autocomplete="off" data-provide="typeahead" type="text" class="form-control mainHangye"
+					 placeholder="请输入关键字" />
+					<br />
+					<span class="unit4">说明 :</span>
+					<span class="desc"> </span>
+				</label>
+				<br />
+				<br />
+				<p>法人信息</p>
+				<div class="idcardFront clearfix">
+					<div class="pull-left">
+						<span>产品商标图片:</span>
+						<br />
+					</div>
+					<div class="pull-left imglist1">
+						<img src="" alt="" id="pic1Img" />
+					</div>
+				</div>
+				<p class="promise">易企点承诺对认证图片及信息的严格保密义务。承诺未经您明确授权，不将认证图片及信息用于易企点平台之外的使用，请放心上传。</p>
+			</form>
+			<p class="areaReg">
+				<button type="button" class="regBtn">修改</button>
+			</p>
+		</div>
+		<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="js/bootstrap-select.min.js" type="text/javascript" charset="utf-8" async defer></script>
+		<script type="text/javascript" src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://cdn.bootcss.com/layer/3.1.0/layer.js"></script>
+		<script type="text/javascript" src="js/laydate.js"></script>
+		<script type="text/javascript" src="js/ajaxfileupload.js"></script>
+		<script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap3-typeahead.min.js"></script>
+		<script type="text/javascript" src="js/change.js"></script>
+		<script type="text/javascript" src="js/updatacompanyInfo.js?version=201807026"></script>
+	</body>
+</html>

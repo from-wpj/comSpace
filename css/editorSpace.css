@@ -1,0 +1,1231 @@
+.mainInfo {
+	width: 100%;
+	padding: 5px 10px;
+	border: 1px solid #000;
+	margin: 10px 0;
+}
+
+#inputArea {
+	width: 100%;
+	height: 60px;
+	font-size: 20px;
+}
+
+.mianLeft {
+	width: 160px;
+	margin-right: 20px;
+	background-color: #262626;
+	color: silver;
+	height: 995px;
+}
+
+.mianLeft p {
+	margin: 0;
+	height: 40px;
+	line-height: 38px;
+	font-size: 16px;
+	cursor: pointer;
+	text-align: left;
+	border-bottom: 2px solid transparent;
+	padding-left: 36px;
+}
+
+.mianLeft p img {
+	vertical-align: middle;
+	margin-bottom: 3px
+}
+
+.mianLeft p:hover {
+	background-color: #29e;
+	color: white;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.mianRight {
+	width: 1020px;
+	padding: 10px;
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 1px 3px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.goodInfoDiv,
+.cominfoDiv,
+.comCulDiv,
+.comMessageDiv,
+.comVisitorDiv,
+.comPurchaseDiv,
+.comCollcctionDiv,
+.comActivityDiv {
+	display: none;
+}
+
+#writeBtn,
+.addjigouBtn,
+.addpersonuBtn,
+.addContentBtn,
+.changeContentBtn,
+.configBtn,
+.addCoreValuesBtn,
+.addLeaderBtn,
+.addGoodBtn,
+.addHonerBtn,
+.configUpdataBtn,
+.addProductBtn,
+.addchanpinBtn,
+.addSpaceimgBtn,
+.changeSpaceBtn,
+.addDemand,
+.addActivity {
+	padding: 0 15px;
+	background-color: #29e;
+	color: #fff;
+	margin: 10px;
+	border: none;
+	outline: none;
+	width: 170px;
+	height: 36px;
+	line-height: 36px;
+	border-radius: 5px;
+}
+
+.addContentArea,
+.contentDetails {
+	display: none;
+}
+
+.comRizhiDiv ul #writeRizhi {
+	background-color: #f00;
+}
+
+.comCulDiv ul,
+.cominfoDiv ul,
+.comVisitorDiv ul {
+	border-bottom: 1px solid #eee;
+	margin-bottom: 20px
+}
+
+#leaderActityDiv,
+#goodThingsDiv,
+#honerDiv {
+	display: none;
+}
+
+#comZizhiDiv,
+#zuzhijigouDiv,
+#comShowDiv,
+#teamIntrDiv,
+#contentUsDiv,
+#comDescDiv {
+	display: none;
+}
+
+.imglist1,
+.imgTeam,
+.imgCore,
+.imglist1chanpin {
+	text-align: center;
+}
+
+.imglist1 input,
+.imgTeam input,
+#picChange,
+.imgCore input,
+#picChangeCore,
+.imgHoner input,
+#picHonerChange,
+.imglist1chanpin input {
+	background-color: #29e;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 15px;
+	color: #fff;
+	outline: none;
+	margin-bottom: 10px;
+}
+
+.addjigouDiv,
+.addteamDiv,
+.addHonerDiv,
+.addDemandDiv,
+.changeDemandDiv {
+	display: none;
+	margin: 20px;
+}
+
+.idcardFront,
+.teamHead,
+.honerHead {
+	margin-bottom: 20px
+}
+
+.idcardFront > div:nth-child(1) span,
+.teamHead > div:nth-child(1) span,
+.coreImg > div:nth-child(1) span,
+.honerHead > div:nth-child(1) span {
+	width: 200px;
+	display: inline-block;
+	font-weight: bolder;
+}
+
+.idcardFront > div:nth-child(2),
+.teamHead > div:nth-child(2),
+.coreImg > div:nth-child(2),
+.honerHead > div:nth-child(2) {
+	width: 400px;
+	text-align: center;
+}
+
+.idcardFront > div:nth-child(2) img,
+.teamHead > div:nth-child(2) img,
+.coreImg > div:nth-child(2) img,
+.honerHead > div:nth-child(2) img {
+	width: 90%;
+	border-radius: 10px;
+}
+
+.regTips {
+	color: #f00;
+	font-size: 14px;
+}
+
+.imgDesc,
+.sortName {
+	vertical-align: top;
+	display: inline-block;
+	width: 80px;
+}
+
+#jigouList tr td img {
+	width: 100px;
+	border-radius: 5px;
+	max-height: 120px
+}
+
+#jigouList tr td:nth-child(1),
+#jigouList tr td:nth-child(3) {
+	width: 130px
+}
+
+.changeJigou,
+.deleteJigou {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.deleteJigou {
+	color: #f00;
+}
+
+.deleteJigouDiv,
+.deleteTeamDiv,
+.deleteProductDiv,
+.addProductDiv,
+.addChanpinDiv,
+.changeChanpinDiv,
+.addSpaceimgDiv,
+.deleteImgdiv,
+.changeComdescDiv,
+.addprovideInfoDiv,
+.addBuyInfoDiv,
+.addProductZhibiaoDiv,
+.addProductZhibiaoDiv3,
+.showzhibiaoDiv {
+	display: none;
+	margin: 40px auto;
+}
+
+.changeComdescDiv,
+.addProductZhibiaoDiv,
+.addProductZhibiaoDiv3,
+.showzhibiaoDiv {
+	margin: 40px;
+}
+
+.deleteJigouDiv p,
+.deleteTeamDiv p,
+.deleteProductDiv p,
+.deleteImgdiv p {
+	text-align: center;
+	font-size: 20px;
+}
+
+.changeJigoutuDiv,
+.changeImgDiv,
+.changeHonerImgDiv {
+	display: none;
+	margin: 20px;
+}
+
+.changeJigoutuDiv img {
+	width: 400px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	margin-left: 180px
+}
+
+.changeJigoutuDiv label span {
+	display: inline-block;
+	width: 80px;
+}
+
+.changeJigoutuDiv label .imgDesc2 {
+	vertical-align: top;
+}
+
+.addDemandDiv label span:nth-child(1),
+.changeDemandDiv label span:nth-child(1) {
+	display: inline-block;
+	width: 10px;
+	color: #f00;
+}
+
+.addHonerDiv label span:nth-child(2),
+.addDemandDiv label span:nth-child(2),
+.changeDemandDiv label span:nth-child(2),
+.addteamDiv label span:nth-child(1),
+.addHonerDiv label span:nth-child(1) {
+	display: inline-block;
+	width: 80px;
+}
+
+.addDemandDiv label .desc,
+.changeDemandDiv label .desc {
+	font-size: 12px;
+	color: #969aa3;
+}
+
+.changeDemandDiv label .tips2 {
+	color: #f00;
+	display: inline-block;
+	width: 500px;
+}
+
+.addteamDiv label .postSpan,
+.addteamDiv label .personSpan,
+.addHonerDiv label .postHonerSpan,
+.addHonerDiv label .personHonerSpan {
+	vertical-align: top;
+}
+
+#teamList img {
+	width: 100px;
+	border-radius: 5px;
+	max-height: 120px
+}
+
+.chooseTeam {
+	display: none;
+	margin: 20px;
+}
+
+#teamchooseList tr td {
+	cursor: pointer;
+}
+
+#teamList tr td span {
+	cursor: pointer;
+}
+
+#teamList tr td:nth-child(1) {
+	width: 120px;
+}
+
+#teamList tr td:nth-child(5) {
+	width: 170px;
+}
+
+.changeImgDiv p,
+.changeCoreValueDiv p,
+.changeHonerImgDiv p {
+	text-align: center;
+}
+
+.changeImgDiv p img,
+.changeCoreValueDiv p img,
+.changeHonerImgDiv p img {
+	width: 300px;
+	border-radius: 10px;
+}
+
+.contentDetails p {
+	margin: 0 40px;
+	height: 30px;
+}
+
+.contentDetails p span {
+	color: black;
+	font-size: 14px;
+}
+
+.contentDetails p span:nth-child(1) {
+	display: inline-block;
+	width: 100px;
+}
+
+.addContentDiv label {
+	width: 100%;
+}
+
+.addContentDiv label span:nth-child(1) {
+	display: inline-block;
+	width: 80px;
+}
+
+.addContentDiv,
+.changeContentDiv {
+	display: none;
+	margin: 20px;
+}
+
+.active2 {
+	background-color: #29e;
+	color: #fff;
+}
+
+#rizhiList tr td img {
+	width: 100px;
+	border-radius: 5px;
+	max-height: 120px
+}
+
+#rizhiList tr td span,
+#coreValuesList tr td span {
+	cursor: pointer;
+}
+
+.deleteDiv {
+	display: none;
+	margin: 20px;
+	text-align: center;
+}
+
+.writeDiv {
+	padding: 10px 20px;
+	display: none;
+}
+
+.writeDiv label span {
+	display: inline-block;
+	width: 60px;
+}
+
+.chooseLabelDiv {
+	display: none;
+	margin: 20px;
+}
+
+.chooseLabelDiv > label {
+	display: inline-block;
+	width: 31%;
+	height: 30px;
+}
+
+#coreValuesList tr td img,
+#honerList tr td img,
+#visitorList tr td img,
+#productList tr td img,
+#chanpinList tr td img,
+#visitorSingleList tr td img {
+	width: 100px;
+	border-radius: 5px;
+	max-height: 120px
+}
+
+.deleteCoreValuediv,
+.deleteLeadDiv,
+.deleteGoodDiv,
+.deleteHonerDiv,
+.deleteMessageDiv,
+.deleteChanpinDiv,
+.answerMessageDiv,
+.deleteDemandDiv,
+.cancleCollectionDiv {
+	display: none;
+	margin: 40px;
+}
+
+.deleteCoreValuediv p,
+.deleteLeadDiv p,
+.deleteGoodDiv p,
+.deleteHonerDiv p,
+.deleteMessageDiv p,
+.deleteChanpinDiv p,
+.deleteDemandDiv p,
+.cancleCollectionDiv p {
+	text-align: center;
+	font-size: 20px;
+}
+
+.addCoreValuediv,
+.addLeadDiv,
+.addgoodDiv {
+	display: none;
+	margin: 20px;
+}
+
+.addCoreValuediv label span {
+	display: inline-block;
+	width: 80px;
+}
+
+.changeCoreValueDiv {
+	display: none;
+	margin: 20px;
+}
+
+#leaderList tr td span,
+#goodThingsList tr td span,
+#honerList tr td span,
+#messageList tr td span,
+#visitorList tr td span,
+#productList tr td span,
+#chanpinList tr td span {
+	cursor: pointer;
+}
+
+.addLeadDiv label span,
+.addgoodDiv label span {
+	display: inline-block;
+	width: 80px;
+}
+
+.showComInfo {
+	padding: 10px 30px;
+	display: none;
+	width: 700px;
+	margin: 0 auto;
+}
+
+.configArea {
+	display: none;
+}
+
+.showComInfo p span {
+	color: black;
+	font-size: 13px;
+}
+
+.showComInfo p span:nth-child(1) {
+	display: inline-block;
+	width: 80px;
+}
+
+.showComInfo2 h5 {
+	font-weight: bold;
+}
+
+#honerList tr td:nth-child(5),
+#teamList tr td:nth-child(5) {
+	width: 120px;
+}
+
+#honerList tr td:nth-child(2),
+#teamList tr td:nth-child(2) {
+	width: 80px;
+}
+
+#honerList tr td:nth-child(3),
+#teamList tr td:nth-child(3) {
+	width: 100px;
+}
+
+#coreValuesList tr td:nth-child(2) {
+	width: 100px;
+}
+
+#coreValuesList tr td:nth-child(4) {
+	width: 120px;
+}
+
+.visitorLoadNext,
+.visitorLoadPrve,
+.goodThingPrve,
+.goodThingNext,
+.leaderPrve,
+.leaderNext,
+.rizhiPrve,
+.rizhiNext,
+.productPrve,
+.productNext,
+.chanpinPrve,
+.chanpinNext,
+.visitorSinglePrve,
+.visitorSingleNext,
+.messagePrve,
+.messageNext,
+.demandLoadPrve,
+.demandLoadNext,
+#submitBtn,
+#nextStepBtn,
+.collectionComPrve,
+.collectionComNext,
+.collectionProductPrve,
+.collectionProductNext,
+.activityLoadPrve,
+.activityLoadNext,
+.activityedLoadPrve,
+.activityedLoadNext {
+	width: 280px;
+	height: 50px;
+	line-height: 50px;
+	background-color: #29e;
+	color: #fff;
+	text-align: center;
+	border: none;
+	border-radius: 40px;
+	outline: none;
+	margin: 2.5%;
+	display: none;
+}
+
+.addProductDiv #file,
+.addChanpinDiv #imgChanpin,
+.addSpaceimgDiv #Spaceimg {
+	display: inline-block;
+}
+
+.addProductDiv {
+	margin: 20px;
+}
+
+.addProductDiv label span,
+.addSpaceimgDiv label span {
+	display: inline-block;
+	width: 100px;
+}
+
+.addChanpinDiv,
+.changeChanpinDiv,
+.addSpaceimgDiv,
+.addprovideInfoDiv,
+.addBuyInfoDiv {
+	margin: 40px;
+}
+
+.addChanpinDiv label,
+.changeChanpinDiv label,
+.addSpaceimgDiv label,
+.addprovideInfoDiv label {
+	display: flex;
+	min-height: 50px
+}
+
+.imgList > div {
+	width: 40%;
+	margin: 10px 3%;
+	padding: 0 10px;
+}
+
+.imgList > div img {
+	width: 100%;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.imgList > div p {
+	text-align: center;
+}
+
+.imgList > div button,
+.addImgBtn,
+#upImg {
+	padding: 10px 15px;
+	background-color: #f00;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+}
+
+.addImgBtn,
+#upImg {
+	background-color: #29e;
+}
+
+.deleteImg {
+	display: none;
+	margin: 20px 40px;
+}
+
+.deleteImg p {
+	text-align: center;
+	font-size: 20px;
+}
+
+.addChanpinDiv label span:nth-child(1),
+.changeChanpinDiv label span:nth-child(1).changeChanpinDiv p span:nth-child(1) {
+	display: inline-block;
+	width: 10px;
+	color: #f00;
+}
+
+.addChanpinDiv > p,
+.changeChanpinDiv > p {
+	font-size: 20px;
+	text-align: center;
+}
+
+.addChanpinDiv label span:nth-child(2),
+.changeChanpinDiv label span:nth-child(2) {
+	display: inline-block;
+	width: 110px;
+}
+
+.addChanpinDiv label .desc,
+.changeChanpinDiv label .desc {
+	font-size: 12px;
+	color: #969aa3
+}
+
+#chanpinList tr td:nth-child(6) {
+	width: 80px;
+}
+
+#chanpinList tr td:nth-child(7) {
+	width: 80px;
+}
+
+#chanpinList tr td:nth-child(8) {
+	width: 120px;
+}
+
+#tipsShow {
+	border: 1px solid #eee;
+}
+
+#tipsShow span {
+	width: 20%;
+	display: inline-block;
+	text-align: center;
+	line-height: 50px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+
+#tipsShow .spanActive {
+	background-color: #f00;
+	color: #fff;
+}
+
+.glyphicon-arrow-right {
+	font-size: 20px;
+}
+
+.product1Div,
+.productProvideDiv,
+.productBugDiv {
+	margin: 20px auto;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+.productProvideDiv,
+.productBugDiv {
+	display: none;
+}
+
+.productProvideDiv > p,
+.productBugDiv > p {
+	text-align: center;
+	font-size: 25px;
+}
+
+#changeAddressBtn2,
+#changeTypeBtn2 {
+	margin-left: 10px;
+	background-color: #29e;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+	outline: none;
+	display: inline-block;
+}
+
+.tips {
+	color: #f00;
+	display: inline-block;
+	font-size: 12px;
+	margin-left: 20px;
+}
+
+.singleVisitorDiv {
+	display: none;
+}
+
+.comImgList div {
+	width: 50%;
+	margin: 10px 0;
+}
+
+.comImgList div p {
+	text-align: center;
+}
+
+.comImgList div p button {
+	padding: 10px 15px;
+	background-color: #f00;
+	color: #fff;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+}
+
+.comImgList div img {
+	width: 80%;
+	margin: 10px 10%;
+}
+
+.showComInfo2 {
+	padding: 20px
+}
+
+#visitorList tr th,
+#messageList tr th {
+	display: none;
+}
+
+#visitorList tr td img,
+#messageList tr td img {
+	width: 45px;
+	height: 45px;
+	border-radius: 22.5px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+#visitorList tr td div > div p,
+#messageList tr td div > div p {
+	height: 20px;
+	margin: 0;
+	line-height: 30px;
+	text-align: left;
+}
+
+#visitorList tr td div > .personInfo p {
+	height: 20px;
+	margin: 0;
+	line-height: 30px;
+}
+
+#visitorList tr td div > .content p {
+	line-height: 20px;
+	margin-bottom: 10px
+}
+
+#messageList tr td div > .content,
+.answercontent {
+	color: #969aa3;
+	text-align: left;
+	padding-left: 65px;
+}
+
+#messageList tr td div > .content {
+	margin: 20px 0
+}
+
+#messageList tr td div > .content,
+.comeForm {
+	color: #969aa3;
+	text-align: left;
+	padding-left: 65px;
+}
+
+#visitorList tr td div > .content p span {
+	margin: 0 20px
+}
+
+#messageList tr td div > p {
+	margin: 0;
+	text-align: left;
+	padding-left: 45px
+}
+
+#messageList tr td .personInfo > p {
+	margin: 0;
+	text-align: left;
+	padding-left: 0
+}
+
+#messageList tr td .answerMessage,
+#messageList tr td .deleteMessage {
+	display: inline-block;
+	margin: 0 20px;
+}
+
+.fixed {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+#purchaseList tr td span {
+	cursor: pointer;
+}
+
+#purchaseList tr td:nth-child(7) {
+	width: 160px;
+}
+
+[id^="productSecpil"] input,
+#productSecpil button {
+	display: inline-block;
+}
+
+[id^="productSecpil"] > div {
+	text-align: center;
+	width: 100px;
+	border-radius: 10px;
+	display: none;
+	margin: 10px 0;
+}
+
+[id^="productSecpil"] > div img {
+	width: 100%;
+	border-radius: 10px;
+	margin: 0 430px;
+}
+
+[id^="addproductSecpil"] input,
+#addproductSecpil button {
+	display: inline-block;
+}
+
+[id^="addproductSecpil"] > div {
+	text-align: center;
+	width: 100px;
+	border-radius: 10px;
+	display: none;
+	margin: 10px 0;
+}
+
+[id^="addproductSecpil"] > div img {
+	width: 100%;
+	border-radius: 10px;
+	margin: 0 430px;
+}
+
+[id^="addedproductSecpil"] input,
+#addedproductSecpil button {
+	display: inline-block;
+}
+
+[id^="addedproductSecpil"] > div {
+	text-align: center;
+	width: 100px;
+	border-radius: 10px;
+	display: none;
+	margin: 10px 0;
+}
+
+[id^="addedproductSecpil"] > div img {
+	width: 100%;
+	border-radius: 10px;
+	margin: 0 430px;
+}
+
+.addprovideInfoDiv label > span:nth-child(1),
+.addBuyInfoDiv label > span:nth-child(1) {
+	display: inline-block;
+	width: 100px;
+}
+
+.addprovideInfoDiv label .desc,
+.addBuyInfoDiv label .desc {
+	color: #969aa3;
+	font-size: 12px;
+}
+
+#addProductInfo2 {
+	padding: 3px 5px;
+	border: none;
+	background-color: #29e;
+	color: #fff;
+	outline: none;
+}
+
+#addedProductName option {
+	display: none;
+}
+
+#showProductName {
+	position: absolute;
+	top: 30px;
+	left: 50px;
+}
+
+#addProductTexingBtn,
+#addProductTexingBtn2,
+#addProductTexingBtn3 {
+	background-color: #29e;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	width: 130px;
+	height: 40px;
+	margin-bottom: 10px
+}
+
+#addproductList tr td > img,
+#addproductList2 tr td > img,
+#addproductList3 tr td > img {
+	width: 100px;
+	max-height: 100px;
+}
+
+#addproductList tr td span,
+#addproductList2 tr td span,
+#addproductList3 tr td span,
+#collectionComTable tr td span,
+#collectionProductTable tr td span {
+	cursor: pointer;
+}
+
+#addproductList4 tr td img {
+	width: 100px;
+}
+
+#collectionComTable tr td img,
+#collectionProductTable tr td img {
+	width: 60px;
+	height: 60px;
+}
+
+.comCollcctionDiv ul,
+.comActivityDiv ul {
+	margin: 10px 0;
+}
+
+#pic1Img {
+	width: 300px;
+}
+
+#activityList tr td img {
+	width: 100px;
+	max-height: 100px;
+	border-radius: 5px;
+}
+
+#activityList tr td span {
+	cursor: pointer;
+}
+
+.approvalingArea,
+.approvaledArea {
+	display: none;
+}
+
+.changeDemandDiv label {
+	display: flex;
+}
+
+.addjigouDiv label,
+.addteamDiv label {
+	display: flex;
+}
+
+/* icon */
+
+#writeBtn img,
+.addchanpinBtn img,
+.addCoreValuesBtn img,
+.addSpaceimgBtn img,
+.addProductBtn img,
+.addjigouBtn img,
+.addpersonuBtn img,
+.addContentBtn img,
+.changeContentBtn img,
+.addLeaderBtn img,
+.addGoodBtn img,
+.addHonerBtn img,
+.addDemand img {
+	vertical-align: text-bottom;
+	margin-right: 5px;
+}
+
+.rzTime {
+	font-size: 12px;
+	display: block;
+	text-align: right;
+	padding-right: 20px;
+	margin-top: 10px;
+	color: #c0c0c0
+}
+
+.table thead tr th {
+	border-bottom: none;
+	background-color: #EDEDEE;
+	font-weight: bold;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
+	background-color: #29e!important;
+	border-radius: 0;
+}
+
+.nav-pills > li {
+	background-color: #262626;
+}
+
+.nav-pills > li a {
+	color: white
+}
+
+.nav > li > a:focus,
+.nav > li > a:hover {
+	background-color: #29e;
+	border-radius: 0;
+	transition: all 0.5s;
+}
+
+.comImgList div:hover {
+	box-shadow: 1px 3px 5px 1px rgb(0, 0, 0, 0.1)
+}
+
+#loca {
+	width: 900px;
+	height: 600px;
+	margin: 40px auto;
+	margin-bottom: 40px;
+}
+
+.BMap_bubble_title {
+	color: #cc5522;
+}
+
+.anchorBL {
+	display: none;
+}
+
+.BMap_cpyCtrl {
+	display: none;
+}
+
+.deleteMessage,
+.answerMessage {
+	margin: 0 0 0 20px!important;
+}
+
+.deleteMessage span,
+.answerMessage span {
+	margin-right: 5px
+}
+
+#messageList,
+#visitorList {
+	border: none;
+}
+
+#messageList tbody tr,
+#visitorList tbody tr {
+	margin-top: 10px;
+	display: block;
+}
+
+#messageList tbody tr td,
+#visitorList tbody tr td {
+	display: block;
+	padding: 20px
+}
+
+.lyTime {
+	margin-right: 10px;
+	font-size: 12px;
+	color: #C0C0C0FF
+}
+
+#purchaseList tbody tr {
+	height: 80px;
+}
+
+#collectionComTable tbody tr,
+#collectionProductTable tbody tr,
+#activityList tbody tr {
+	height: 120px;
+}
+
+.nav > li > a > img {
+	vertical-align: sub;
+}
+
+.moreDemand {
+	height: 80px;
+	display: block;
+	line-height: 80px
+}
+
+#rizhiList tbody tr td:nth-child(2) {
+	padding: 0
+}
+
+#chanpinList tbody tr td:nth-child(2) {
+	padding: 0
+}
+
+#productList tbody tr td:nth-child(2):hover,
+#leaderList tbody tr td:nth-child(1):hover,
+#chanpinList tbody tr td:nth-child(2):hover,
+#activityList tbody tr td:nth-child(2):hover,
+#rizhiList tbody tr td:nth-child(2):hover,
+#collectionComTable tbody tr td:nth-child(2):hover,
+#purchaseList tbody tr td:nth-child(1):hover,
+#goodThingsList tbody tr td:nth-child(1):hover,
+#collectionProductTable tbody tr td:nth-child(2):hover {
+	background-color: #29e;
+	color: white;
+	cursor: pointer;
+}
+
+.visitorCollection {
+	height: 120px;
+	display: block;
+	line-height: 120px
+}
+
+.BMapLabel {
+	border: none!important;
+}
+
+.BMap_bubble_content {
+	font-size: 14px;
+	color: #c52;
+	margin-top: 20px
+}
+
+.rzTitle {
+	height: 74px;
+	margin-bottom: 0;
+	padding-top: 10px;
+}
+
+.viewP,
+.pdtName {
+	width: 100%;
+	display: block;
+	height: 117px;
+	padding-top: 50px;
+}
+
+.viewHd,
+.viewThings {
+	width: 100%;
+	display: block;
+	height: 40px;
+	line-height: 40px;
+}
+
+.viewAct,
+.viewPdt2 {
+	width: 100%;
+	display: block;
+	height: 120px;
+	line-height: 120px
+}

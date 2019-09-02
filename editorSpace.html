@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <link rel="icon" href="img/logo.png" type="image/x-icon"/>
+        <title>企业中心</title>
+        <title> </title>
+        <link rel="stylesheet" href="css/reset.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.14.1/dist/bootstrap-table.min.css"/>
+        <link rel="stylesheet" href="css/skin/default/layer.css"/>
+        <link rel="stylesheet" href="css/theme/default/laydate.css"/>
+        <link rel="stylesheet" href="css/public2.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css"/>
+        <link rel="stylesheet" href="css/editorSpace.css?version=20190828"/>
+    </head>
+    <body>
+        <div class="navTitle">
+            <div class="navContent">
+                <div class="logoArea ">
+                    <img src="" alt=""/>
+                    <span class="companyName">  </span>
+                </div>
+                <div class="topRight ">
+                    <img src=" " class="userImg" alt=""/>
+                    <span class="name"> </span>
+                    <span class="quitOut">
+                        <img src="img/2out.png" alt=""/>
+                        退出
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="clearfix">
+                <div class="mianLeft pull-left">
+                    <p class="comRizhi active2" id="comRizhi">
+                        <img src="img/rz.png" alt=""/>
+                        企业日志
+                    </p>
+                    <p class="goodInfo" id="goodInfo">
+                        <img src="img/cpxx.png" alt=""/>
+                        产品信息
+                    </p>
+                    <p class="cominfo">
+                        <img src="img/qyxx.png" alt=""/>
+                        企业信息
+                    </p>
+                    <p class="comCul">
+                        <img src="img/wh.png" alt=""/>
+                        企业文化
+                    </p>
+                    <p class="comMessage" id="comMessage">
+                        <img src="img/qyly.png" alt=""/>
+                        企业留言
+                    </p>
+                    <p class="comVisitor" id="comVisitor">
+                        <img src="img/rsxq.png" alt=""/>
+                        企业访客
+                    </p>
+                    <p class="comPurchase">
+                        <img src="img/cgxq.png" alt=""/>
+                        采购需求
+                    </p>
+                    <p class="comCollection">
+                        <img src="img/sc.png" alt=""/>
+                        企业收藏
+                    </p>
+                    <p class="comActivity" id="comActivity">
+                        <img src="img/qyhd.png" alt=""/>
+                        企业活动
+                    </p>
+                    <p>
+                        <img src="img/zpxq.png" alt=""/>
+                        招聘需求
+                    </p>
+                    <p>
+                        <img src="img/sbxq.png" alt=""/>
+                        设备需求
+                    </p>
+                    <p>
+                        <img src="img/sxy.png" alt=""/>
+                        企业商学院
+                    </p>
+                    <p>
+                        <img src="img/rsxq.png" alt=""/>
+                        人事需求
+                    </p>
+                    <p>
+                        <img src="img/jsxq.png" alt=""/>
+                        技术需求
+                    </p>
+                    <p>
+                        <img src="img/eszy.png" alt=""/>
+                        二手资源
+                    </p>
+                    <p class="htzx">
+                        <img src="img/htzx.png" alt=""/>
+                        后台中心
+                    </p>
+                    <p>
+                        <img src="img/tg.png" alt=""/>
+                        企业推广
+                    </p>
+                </div>
+                <div class="mianRight pull-left">
+                    <div class="comRizhiDiv" id="comRizhiDiv">
+                        <p class="clearfix">
+                            <button id="writeBtn" class="pull-right btn btn-pramary">
+                                <img src="img/2xrz.png" alt=""/>
+                                写日志
+                            </button>
+                        </p>
+                        <div class="rizhiWrite">
+                            <table id="rizhiList">
+                                <thead>
+                                    <tr>
+                                        <th data-field="image"> </th>
+                                        <th data-field="title"> </th>
+                                        <th data-field="lable"> </th>
+                                        <th data-field="option">    </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                            <br/>
+                            <p class="clearfix">
+                                <button class="rizhiNext pull-right">下一页</button>
+                            </p>
+                        </div>
+                        <!-- 删除操作 -->
+                        <div class="deleteDiv">确定删除该日志？</div>
+                        <!-- 发日志 -->
+                        <div class="writeDiv">
+                            <form action="" class="form-inline" id="addCircle">
+                                <label for="">
+                                    <span>标题</span>
+                                    <input type="text" class="form-control circleTitle"/>
+                                </label>
+                                <br/>
+                                <label for="">
+                                    <span>分类</span>
+                                    <input type="text" class="form-control labelInput"/>
+                                </label>
+                                <br/>
+                                <p>日志内容</p>
+                                <div id="editor">   </div>
+                            </form>
+                        </div>
+                        <!-- 选择类别 -->
+                        <div class="chooseLabelDiv">    </div>
+                        <div class="rizhiList"> </div>
+                    </div>
+                    <div class="goodInfoDiv clearfix" id="goodInfoDiv">
+                        <p class="clearfix">
+                            <p class="pull-left">
+                                完善产品的供方，买方信息有利于
+                                <br/>
+                                1.产品更好的匹配；2.产品的搜索排名靠前；3 企业的搜索排名靠前
+                            </p>
+                            <button class="addchanpinBtn pull-right">
+                                <img src="img/2add.png" alt=""/>
+                                添加产品信息
+                            </button>
+                        </p>
+                        <table id="chanpinList">
+                            <thead>
+                                <tr>
+                                    <th data-field="img">   </th>
+                                    <th data-field="ProductName">   </th>
+                                    <th data-field="ProductType">   </th>
+                                    <th data-field="ProductPrice">  </th>
+                                    <th data-field="area">  </th>
+                                    <th data-field="addProvide">    </th>
+                                    <th data-field="addBuy">    </th>
+                                    <th data-field="option">    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <br/>
+                        <p class="clearfix">
+                            <button class="chanpinNext pull-right">下一页</button>
+                        </p>
+                        <!-- 删除 -->
+                        <div class="deleteChanpinDiv">
+                            <p>确认删除该产品信息</p>
+                        </div>
+                        <div class="deleteImg">
+                            <p>确定删除该图片</p>
+                        </div>
+                        <!-- 添加产品信息 -->
+                        <div class="addChanpinDiv form-inline">
+                            <p>
+                                带
+                                <span style="color:#f00">*</span>
+                                的都是必填项
+                            </p>
+                            <div class="product1Div">
+                                <label for="">
+                                    <span>*</span>
+                                    <span>产品名</span>
+                                    <input type="text" class="form-control ProductName"/>
+                                </label>
+                                <label for="">
+                                    <span>*</span>
+                                    <span>产品国际代码</span>
+                                    <input type="text" class="form-control ProductCode"/>
+                                </label>
+                                <label for="">
+                                    <span>*</span>
+                                    <span>产品型号</span>
+                                    <input type="text" class="form-control ProductXinghao"/>
+                                </label>
+                                <label for="" class="oldTypeArea2">
+                                    <span>*</span>
+                                    <span>产品类型</span>
+                                    <input type="text" id="hangye1" autocomplete="off" data-provide="typeahead" type="text" class="form-control oddTypeVal2"/>
+                                    <br/>
+                                    <span>  </span>
+                                    说明
+                                    :
+                                    <span class="desc"> </span>
+                                </label>
+                                <label for="">
+                                    <span>*</span>
+                                    <span>产品价格</span>
+                                    <input type="number" class="form-control ProductPrice"/>
+                                    元
+                                </label>
+                                <label for="">
+                                    <span>*</span>
+                                    <span>产品库存</span>
+                                    <input type="number" class="form-control Stock"/>
+                                    件
+                                </label>
+                                <label for="">
+                                    <span>*</span>
+                                    <span>发货周期</span>
+                                    <input type="number" class="form-control DeliveryCycle"/>
+                                    ~
+                                    <input type="number" class="form-control DeliveryCycle2"/>
+                                    天
+                                </label>
+                                <label for="" class="oldAddressArea2">
+                                    <span>  </span>
+                                    <span>原出厂地</span>
+                                    <span class="oddAddressVal2">   </span>
+                                    <span class="tips">修改出厂地，下面重新选择，也可不修改</span>
+                                </label>
+                                <label for="" class="newAddressArea2">
+                                    <span>*</span>
+                                    <span>出厂地</span>
+                                    <select id="provice1" class="form-control">
+                                        <option value="=请选择=">=请选择=</option>
+                                    </select>
+                                    <select id="city1" class="form-control">
+                                        <option value="=请选择=">=请选择=</option>
+                                    </select>
+                                    <select id="county1" class="form-control">
+                                        <option value="=请选择=">=请选择=</option>
+                                    </select>
+                                    <input type="text" class="form-control moreAddress" placeholder="详细街道地址"/>
+                                </label>
+                                <label for="" class="imgChanpin">
+                                    <span>  </span>
+                                    <span>产品图片(可多张)</span>
+                                    <input name="file" type="file" class="" id="imgChanpin" multiple="multiple" accept="image/jpg, image/jpeg, image/png"/>
+                                    (按住Ctrl键并点击图片，即可实现多张图片上传)
+                                </label>
+                                <br/>
+                                <div class="imgList clearfix">  </div>
+                                <div class="addImg clearfix">
+                                    <div class="imglist1chanpin">
+                                        <input type="button" value="上传照片" id="addImgBtn"/>
+                                        <br/>
+                                        <input id="uploadchanpinImg" name="file" accept="image/*" type="file" style="display: none"/>
+                                        <img src=" " alt="" style="display: none" id="pic1Img"/>
+                                        <p style="display: none">
+                                            <button id="upImg">确定</button>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 clearfix" id="tableAdd">
+                                    <h4>
+                                        产品特性指标
+                                    </span>
+                                </h4>
+                                <button class="pull-left" id="addProductTexingBtn">添加产品特性指标</button>
+                                <table id="addproductList">
+                                    <thead>
+                                        <tr>
+                                            <th data-field="indexTypeKey">  </th>
+                                            <th data-field="indexTypeValue">    </th>
+                                            <th data-field="indexImage">    </th>
+                                            <th data-field="option">    </th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                                <br/>
+                            </div>
+                            <br/>
+                            <h4>
+                                <span style="color:#f00">*</span>
+                                产品详情
+                            </h4>
+                            <div id="editor5">  </div>
+                        </div>
+                    </div>
+                    <!-- 添加指标项 -->
+                    <div class="addProductZhibiaoDiv form-inline">
+                        <label for="" id="productSecpil">
+                            <span>产品特性指标</span>
+                            <input type="text" id="ProductTexing" autocomplete="off" data-provide="typeahead" type="text" class="form-control ProductTexing" placeholder="请输入关键字"/>
+                            <input type="text" class="form-control" placeholder="指标值" id="ProductTexingVal"/>
+                            <input name="file" type="file" class="" id="imgBtn" accept="image/jpg, image/jpeg, image/png" onchange="uploadimg()"/>
+                            <div>
+                                <img src="" alt=""/>
+                            </div>
+                        </label>
+                    </div>
+                    <!-- 添加供货方 -->
+                    <div class="addprovideInfoDiv form-inline">
+                        <label for="">
+                            <span>产品名称</span>
+                            <input type="text" class="form-control productProvideName"/>
+                        </label>
+                        <label for="">
+                            <span>国标代码</span>
+                            <input type="text" class="form-control productProvideCode"/>
+                        </label>
+                        <label for="">
+                            <span>产品类型</span>
+                            <input type="text" id="hangyeProvide1" autocomplete="off" data-provide="typeahead" type="text" class="form-control" placeholder="请输入关键字"/>
+                            <br/>
+                            说明 :
+                            <span class="desc"> </span>
+                        </label>
+                        <label for="">
+                            <span>产品描述</span>
+                            <textarea name="" id="productProvideDesc" cols="90" rows="5" class="form-control">  </textarea>
+                        </label>
+                        <p>
+                            <span>产品特性指标</span>
+                        </p>
+                        <div class="col-lg-12 clearfix">
+                            <button class="pull-left" id="addProductTexingBtn2">添加产品特性指标</button>
+                            <table id="addproductList2">
+                                <thead>
+                                    <tr>
+                                        <th data-field="indexTypeKey">  </th>
+                                        <th data-field="indexTypeValue">    </th>
+                                        <th data-field="indexImage">    </th>
+                                        <th data-field="option">    </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                            <br/>
+                        </div>
+                        <p> </p>
+                    </div>
+                    <!-- 添加买货方 -->
+                    <div class="addBuyInfoDiv form-inline">
+                        <label for="">
+                            <span>产品名</span>
+                            <input type="text" class="form-control buyName"/>
+                        </label>
+                    </div>
+                </div>
+                <div class="cominfoDiv">
+                    <ul class="nav nav-pills nav-justified">
+                        <li class="active" id="comInfomation">
+                            <a href="#">基本信息</a>
+                        </li>
+                        <li id="comDesc">
+                            <a href="#">企业简介</a>
+                        </li>
+                        <li id="comShow">
+                            <a href="#">设备展示</a>
+                        </li>
+                        <li id="zuzhijigou">
+                            <a href="#">组织机构</a>
+                        </li>
+                        <li id="teamIntr">
+                            <a href="#">团队介绍</a>
+                        </li>
+                        <li id="contentUs">
+                            <a href="#">联系我们</a>
+                        </li>
+                    </ul>
+                    <div id="comInfomationDiv">
+                        <!-- 添加空间信息 -->
+                        <p class="clearfix configArea">
+                            <button class="configBtn pull-right">添加企业空间信息</button>
+                        </p>
+                        <div class="showComInfo">
+                            <p>
+                                <span>品牌名称</span>
+                                <span class="Brand">    </span>
+                            </p>
+                            <p>
+                                <span>产品商标</span>
+                                <span class="Trademark">    </span>
+                            </p>
+                            <p>
+                                <span>注册地</span>
+                                <span class="Register"> </span>
+                            </p>
+                            <p>
+                                <span>成立时间</span>
+                                <span class="EstablishTime">    </span>
+                            </p>
+                            <p>
+                                <span>经营范围</span>
+                                <span class="ScopeOfOperation"> </span>
+                            </p>
+                            <p>
+                                <span>注册资金</span>
+                                <span class="RegisteredCapital">    </span>
+                            </p>
+                            <p>
+                                <span>经营期限</span>
+                                <span class="BusinessTime"> </span>
+                            </p>
+                            <p>
+                                <span>主要行业</span>
+                                <span class="Industry"> </span>
+                            </p>
+                            <p>
+                                <span>年营业额</span>
+                                <span class="Turnover"> </span>
+                            </p>
+                            <p>
+                                <span>认证体系</span>
+                                <span class="Authentication">   </span>
+                            </p>
+                            <p>
+                                <span>经营模式</span>
+                                <span class="Management">   </span>
+                            </p>
+                            <p>
+                                <span>客户群体</span>
+                                <span class="CustomerGroup">    </span>
+                            </p>
+                            <p class="clearfix configUpdataArea">
+                                <button class="configUpdataBtn pull-right">
+                                    <img src="img/2change.png" alt=""/>
+                                    修改企业空间信息
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                    <div id="comDescDiv">
+                        <p class="clearfix">
+                            <button class="changeSpaceBtn pull-left">
+                                <img src="img/2change.png" alt=""/>
+                                修改企业简介信息
+                            </button>
+                            <button class="addSpaceimgBtn pull-right">
+                                <img src="img/2add.png" alt=""/>
+                                添加企业简介信息
+                            </button>
+                        </p>
+                        <div class="addSpaceimgDiv">
+                            <label for="" class="SpaceimgLabel">
+                                <span>设备图片(多张)</span>
+                                <input name="file" type="file" id="Spaceimg" multiple="multiple" accept="image/jpg, image/jpeg, image/png"/>
+                            </label>
+                            <br/>
+                            <br/>
+                            <input name="token" type="hidden" accept="image/jpeg,image/jpg,image/png"/>
+                            <div class="descarea">
+                                <h4>企业简介</h4>
+                                <div id="editor6">  </div>
+                            </div>
+                        </div>
+                        <div class="showComInfo2">
+                            <h5>公司简介：</h5>
+                        </div>
+                        <div class="changeComdescDiv">
+                            <div id="editor7">  </div>
+                        </div>
+                        <div class="comImgList clearfix">   </div>
+                        <div class="deleteImgdiv">
+                            <p>确定删除该照片？</p>
+                        </div>
+                    </div>
+                    <div id="comShowDiv">
+                        <p class="clearfix">
+                            <button class="addProductBtn pull-right">
+                                <img src="img/2add.png" alt=""/>
+                                添加设备信息
+                            </button>
+                        </p>
+                        <table id="productList">
+                            <thead>
+                                <tr>
+                                    <th data-field="img">   </th>
+                                    <th data-field="EquipmentName"> </th>
+                                    <th data-field="Manufactor">    </th>
+                                    <th data-field="DateOfPurchase">    </th>
+                                    <th data-field="option">    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <br/>
+                        <p class="clearfix">
+                            <button class="productNext pull-right">下一页</button>
+                        </p>
+                        <!-- 删除设备信息 -->
+                        <div class="deleteProductDiv">
+                            <p>确定删除该机构图？</p>
+                        </div>
+                        <!-- 添加设备信息 -->
+                        <div class="addProductDiv form-inline">
+                            <label for="">
+                                <span>设备名称</span>
+                                <input type="text" class="form-control productName"/>
+                            </label>
+                            <br/>
+                            <br/>
+                            <label for="">
+                                <span>设备厂商</span>
+                                <input type="text" class="form-control productCom"/>
+                            </label>
+                            <br/>
+                            <br/>
+                            <label for="">
+                                <span>出厂日期</span>
+                                <input type="text" class="form-control productDate" id="productTime"/>
+                            </label>
+                            <br/>
+                            <br/>
+                            <label for="" class="imgLabel">
+                                <span>设备图片(多张)</span>
+                                <input name="file" type="file" class="choose " id="file" multiple="multiple" accept="image/jpg, image/jpeg, image/png"/>
+                            </label>
+                            <br/>
+                            <br/>
+                            <input name="token" type="hidden" accept="image/jpeg,image/jpg,image/png"/>
+                            <h4>设备信息描述</h4>
+                            <div id="editor4">  </div>
+                        </div>
+                    </div>
+                    <div id="zuzhijigouDiv">
+                        <p class="clearfix">
+                            <button class="addjigouBtn pull-right">
+                                <img src="img/2add.png" alt=""/>
+                                添加组织机构图
+                            </button>
+                        </p>
+                        <table id="jigouList">
+                            <thead>
+                                <tr>
+                                    <th data-field="img">   </th>
+                                    <th data-field="describe">  </th>
+                                    <th data-field="option">    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <!-- 添加组织机构 -->
+                        <div class="addjigouDiv">
+                            <form action="" class="form-inline">
+                                <div class="idcardFront clearfix">
+                                    <div class="pull-left">
+                                        <span>上传照片</span>
+                                        <br/>
+                                        <span class="regTips">(必传)</span>
+                                    </div>
+                                    <div class="pull-left imglist1">
+                                        <input type="button" value="上传照片" id="pic1"/>
+                                        <br/>
+                                        <input id="upload1" name="file" accept="image/*" type="file" style="display: none"/>
+                                        <img src=" " alt="" style="display: none" id="pic11Img"/>
+                                    </div>
+                                </div>
+                                <label for="">
+                                    <span class="imgDesc">机构图简介</span>
+                                    <textarea name="" id="imgDetails" cols="70" rows="10" class="form-control" placeholder="简要描述一下你所上传的图片"> </textarea>
+                                </label>
+                                <br/>
+                                <label for="">
+                                    <span class="sortName">排序</span>
+                                    <input type="number" class="form-control" id="sort"/>
+                                </label>
+                            </form>
+                        </div>
+                        <!-- 删除组织机构 -->
+                        <div class="deleteJigouDiv">
+                            <p>确定删除该机构图？</p>
+                        </div>
+                        <!-- 修改组织机构图 -->
+                        <div class="changeJigoutuDiv form-inline">
+                            <img src=" " alt="" class="imgList2"/>
+                            <label for="">
+                                <span class="imgDesc2">机构图简介</span>
+                                <textarea name="" id="imgDetails2" cols="70" rows="10" class="form-control">    </textarea>
+                            </label>
+                            <br/>
+                            <br/>
+                            <label for="">
+                                <span class="sortName2">排序</span>
+                                <input type="number" class="form-control" id="sort2"/>
+                            </label>
+                        </div>
+                    </div>
+                    <div id="teamIntrDiv">
+                        <p class="clearfix">
+                            <button class="addpersonuBtn pull-right">
+                                <img src="img/2add.png" alt=""/>
+                                添加团队成员
+                            </button>
+                        </p>
+                        <table id="teamList">
+                            <thead>
+                                <tr>
+                                    <th data-field="img">   </th>
+                                    <th data-field="userName">  </th>
+                                    <th data-field="Post">  </th>
+                                    <th data-field="Msg">   </th>
+                                    <th data-field="option">    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <!-- 添加团队成员 -->
+                        <div class="addteamDiv">
+                            <form action="" class="form-inline">
+                                <div class="teamHead clearfix">
+                                    <div class="pull-left">
+                                        <span>上传头像</span>
+                                        <br/>
+                                        <span class="regTips">(必传)</span>
+                                    </div>
+                                    <div class="pull-left imgTeam">
+                                        <input type="button" value="上传照片" id="pic2"/>
+                                        <br/>
+                                        <input id="upload2" name="file" accept="image/*" type="file" style="display: none"/>
+                                        <img src=" " alt="" style="display: none" id="pic2Img"/>
+                                    </div>
+                                </div>
+                                <label for="">
+                                    <span>姓名</span>
+                                    <input type="text" class="form-control" id="teamName"/>
+                                </label>
+                                <label for="">
+                                    <span class="personSpan">人物简介</span>
+                                    <textarea name="" id="personMsg" cols="70" rows="5" class="form-control" placeholder="简要叙述">    </textarea>
+                                </label>
+                                <label for="">
+                                    <span class="postSpan">职位描述</span>
+                                    <textarea name="" id="postMsg" cols="70" rows="5" class="form-control" placeholder="简要叙述">  </textarea>
+                                </label>
+                            </form>
+                        </div>
+                        <!-- 删除团队成员 -->
+                        <div class="deleteTeamDiv">
+                            <p>确定删除该团队成员？</p>
+                        </div>
+                        <!-- 修改头像 -->
+                        <div class="changeImgDiv">
+                            <p>
+                                <img src=" " alt="" class="oldImg"/>
+                            </p>
+                            <p>
+                                <input type="button" value="修改照片" id="picChange"/>
+                                <br/>
+                            </p>
+                            <input id="uploadChange" name="file" accept="image/*" type="file" style="display: none"/>
+                        </div>
+                    </div>
+                    <div id="contentUsDiv">
+                        <p class="clearfix addContentArea">
+                            <button class="addContentBtn pull-right">
+                                <img src="img/2add.png" alt=""/>
+                                添加联系方式
+                            </button>
+                        </p>
+                        <div class="contentDetails">
+                            <div id="loca"> </div>
+                            <p>
+                                <span>联系人</span>
+                                <span class="contentPerson">    </span>
+                            </p>
+                            <p>
+                                <span>电话</span>
+                                <span class="cellphone">    </span>
+                            </p>
+                            <p>
+                                <span>座机</span>
+                                <span class="phone">    </span>
+                            </p>
+                            <p>
+                                <span>邮箱</span>
+                                <span class="email">    </span>
+                            </p>
+                            <p>
+                                <span>地址</span>
+                                <span class="adress">   </span>
+                            </p>
+                            <p class="clearfix">
+                                <button class="changeContentBtn pull-right">
+                                    <img src="img/2change.png" alt=""/>
+                                    修改联系方式
+                                </button>
+                            </p>
+                        </div>
+                        <!-- 添加联系方式 -->
+                        <div class="addContentDiv">
+                            <form action="" class="form-inline">
+                                <label for="">
+                                    <span>联系人</span>
+                                    <input type="text" class="form-control" id="comContenter" autocomplete="off"/>
+                                </label>
+                                <br/>
+                                <label for="">
+                                    <span>电话</span>
+                                    <input type="text" class="form-control" id="cellPhone" autocomplete="off"/>
+                                </label>
+                                <br/>
+                                <label for="">
+                                    <span>座机</span>
+                                    <input type="text" class="form-control" id="phone" autocomplete="off"/>
+                                </label>
+                                <br/>
+                                <label for="">
+                                    <span>邮箱</span>
+                                    <input type="text" class="form-control" id="email" autocomplete="off"/>
+                                </label>
+                                <br/>
+                                <label for="" class="oldAddressArea">
+                                    <span>原地址</span>
+                                    <input type="text" class="form-control oldAddress"/>
+                                    <br/>
+                                </label>
+                                <label for="">
+                                    <span>地址</span>
+                                    <select id="s_province" name="s_province" class="form-control"> </select>
+                                    <select id="s_city" name="s_city" class="form-control"> </select>
+                                    <select id="s_county" name="s_county" class="form-control"> </select>
+                                </label>
+                                <br/>
+                                <label for="">
+                                    <span>详细地址</span>
+                                    <input type="text" class="form-control" id="addressDet" placeholder="街道地址" autocomplete="off"/>
+                                </label>
+                                <br/>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- 选择成员 -->
+                <div class="chooseTeam">
+                    <p class="form-inline clearfix">
+                        <input type="text" class="form-control pull-right" id="searchInput" placeholder="姓名/电话，按enter搜索"/>
+                    </p>
+                    <table id="teamchooseList">
+                        <thead>
+                            <tr>
+                                <th data-field="username">  </th>
+                                <th data-field="uname"> </th>
+                                <th data-field="department">    </th>
+                                <th data-field="post">  </th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="comCulDiv" id="comCulDiv">
+                    <ul class="nav nav-pills nav-justified">
+                        <li class="active" id="hexinjiazhiguan">
+                            <a href="#">核心价值观</a>
+                        </li>
+                        <li id="leaderActity">
+                            <a href="#">领导活动</a>
+                        </li>
+                        <li id="goodThings">
+                            <a href="#">先进事迹</a>
+                        </li>
+                        <li id="honer">
+                            <a href="#">荣耀墙</a>
+                        </li>
+                    </ul>
+                    <div id="hexinDiv">
+                        <p class="clearfix">
+                            <button class="addCoreValuesBtn pull-right">
+                                <img src="img/2add.png" alt=""/>
+                                添加核心价值观信息
+                            </button>
+                        </p>
+                        <table id="coreValuesList">
+                            <thead>
+                                <tr>
+                                    <th data-field="img">   </th>
+                                    <th data-field="title"> </th>
+                                    <th data-field="Describe">  </th>
+                                    <th data-field="option">    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <!-- 添加核心价值 -->
+                        <div class="addCoreValuediv">
+                            <form action="" class="form-inline">
+                                <label for="">
+                                    <span>标题</span>
+                                    <input type="text" class="form-control coreTitle"/>
+                                </label>
+                                <br/>
+                                <br/>
+                                <label for="">
+                                    <span>图片描述</span>
+                                    <textarea name="" id="coreDescribe" cols="70" rows="5" class="form-control">    </textarea>
+                                </label>
+                                <br/>
+                                <br/>
+                                <div class="coreImg clearfix">
+                                    <div class="pull-left">
+                                        <span>上传照片</span>
+                                        <br/>
+                                        <span class="regTips">(必传)</span>
+                                    </div>
+                                    <div class="pull-left imgCore">
+                                        <input type="button" value="上传照片" id="picimgCore"/>
+                                        <br/>
+                                        <input id="uploadimgCore" name="file" accept="image/*" type="file" style="display: none"/>
+                                        <img src=" " alt="" style="display: none" id="pic2imgCore"/>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- 删除核心价值 -->
+                        <div class="deleteCoreValuediv">
+                            <p>确定删除该核心价值信息？</p>
+                        </div>
+                        <!-- 修改图片 -->
+                        <div class="changeCoreValueDiv">
+                            <p>
+                                <img src=" " alt="" class="oldImg2"/>
+                            </p>
+                            <p>
+                                <input type="button" value="修改照片" id="picChangeCore"/>
+                                <br/>
+                            </p>
+                            <input id="uploadChangeCore" name="file" accept="image/*" type="file" style="display: none"/>
+                        </div>
+                    </div>
+                    <div id="leaderActityDiv">
+                        <p class="clearfix">
+                            <button class="addLeaderBtn pull-right">
+                                <img src="img/2add.png" alt=""/>
+                                添加领导活动
+                            </button>
+                        </p>
+                        <table id="leaderList">
+                            <thead>
+                                <tr>
+                                    <th data-field="title"> </th>
+                                    <th data-field="createTime">    </th>
+                                    <th data-field="option">    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <br/>
+                        <p class="clearfix">
+                            <button class="leaderNext pull-right">下一页</button>
+                        </p>
+                        <!-- 删除核心价值 -->
+                        <div class="deleteLeadDiv">
+                            <p>确实删除该活动？</p>
+                        </div>
+                        <!-- 添加领导活动 -->
+                        <div class="addLeadDiv">
+                            <form action="" class="form-inline">
+                                <label for="">
+                                    <span>标题</span>
+                                    <input type="text" class="form-control leadTitle"/>
+                                </label>
+                                <br/>
+                                <br/>
+                                <p>内容</p>
+                                <div id="editor2">  </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="goodThingsDiv">
+                        <p class="clearfix">
+                            <button class="addGoodBtn pull-right">
+                                <img src="img/2add.png" alt=""/>
+                                添加先进事迹
+                            </button>
+                        </p>
+                        <table id="goodThingsList">
+                            <thead>
+                                <tr>
+                                    <th data-field="title"> </th>
+                                    <th data-field="createTime">    </th>
+                                    <th data-field="option">    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <br/>
+                        <p class="clearfix">
+                            <button class="goodThingNext pull-right">下一页</button>
+                        </p>
+                        <!-- 添加先进事迹 -->
+                        <div class="addgoodDiv">
+                            <form action="" class="form-inline">
+                                <label for="">
+                                    <span>标题</span>
+                                    <input type="text" class="form-control goodTitle"/>
+                                </label>
+                                <br/>
+                                <br/>
+                                <p>内容</p>
+                                <div id="editor3">  </div>
+                            </form>
+                        </div>
+                        <!-- 删除核心价值 -->
+                        <div class="deleteGoodDiv">
+                            <p>确实删除该事迹？</p>
+                        </div>
+                    </div>
+                    <div id="honerDiv">
+                        <p class="clearfix">
+                            <button class="addHonerBtn pull-right">
+                                <img src="img/2add.png" alt=""/>
+                                添加先进事迹
+                            </button>
+                        </p>
+                        <table id="honerList">
+                            <thead>
+                                <tr>
+                                    <th data-field="img">   </th>
+                                    <th data-field="userName">  </th>
+                                    <th data-field="Post">  </th>
+                                    <th data-field="Msg">   </th>
+                                    <th data-field="option">    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <!-- 添加优秀员工 -->
+                        <div class="addHonerDiv">
+                            <form action="" class="form-inline">
+                                <div class="honerHead clearfix">
+                                    <div class="pull-left">
+                                        <span>上传头像</span>
+                                        <br/>
+                                        <span class="regTips">(必传)</span>
+                                    </div>
+                                    <div class="pull-left imgHoner">
+                                        <input type="button" value="上传照片" id="picHoner"/>
+                                        <br/>
+                                        <input id="uploadHoner" name="file" accept="image/*" type="file" style="display: none"/>
+                                        <img src=" " alt="" style="display: none" id="picHonerImg"/>
+                                    </div>
+                                </div>
+                                <label for="">
+                                    <span>姓名</span>
+                                    <input type="text" class="form-control" id="honerName"/>
+                                </label>
+                                <label for="">
+                                    <span class="personHonerSpan">人物简介</span>
+                                    <textarea name="" id="personHonerMsg" cols="70" rows="5" class="form-control" placeholder="简要叙述">   </textarea>
+                                </label>
+                                <label for="">
+                                    <span class="postHonerSpan">职位描述</span>
+                                    <textarea name="" id="postHonerMsg" cols="70" rows="5" class="form-control" placeholder="简要叙述"> </textarea>
+                                </label>
+                            </form>
+                        </div>
+                        <!-- 修改头像 -->
+                        <div class="changeHonerImgDiv">
+                            <p>
+                                <img src=" " alt="" class="oldHonerImg"/>
+                            </p>
+                            <p>
+                                <input type="button" value="修改照片" id="picHonerChange"/>
+                                <br/>
+                            </p>
+                            <input id="uploadHonerChange" name="file" accept="image/*" type="file" style="display: none"/>
+                        </div>
+                        <!-- 删除优秀员工 -->
+                        <div class="deleteHonerDiv">
+                            <p>确实删除该事迹？</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="comMessageDiv" id="comMessageDiv">
+                    <table id="messageList">
+                        <thead>
+                            <tr>
+                                <th data-field="iphoto">    </th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <p>
+                        <button class="messageNext pull-right">下一页</button>
+                    </p>
+                    <div class="answerMessageDiv">
+                        <input type="text" class="form-control" id="messageVal"/>
+                    </div>
+                    <div class="deleteMessageDiv">
+                        <p>确认删除该留言及其回复?</p>
+                    </div>
+                </div>
+                <div class="comVisitorDiv" id="comVisitorDiv">
+                    <div class="allVisitorDiv clearfix">
+                        <table id="visitorList">
+                            <thead>
+                                <tr>
+                                    <th data-field="iphoto">    </th>
+                                    <!-- <th data-field="option"></th> -->
+                                </tr>
+                            </thead>
+                        </table>
+                        <br/>
+                        <p class="clearfix">
+                            <button class="visitorLoadNext pull-right">下一页</button>
+                        </p>
+                    </div>
+                    <!-- 模块访客 -->
+                    <div class="singleVisitorDiv">
+                        <p class="form-inline">
+                            <span>选择模块</span>
+                            <select name="" id="chooseModel" class="form-control">
+                                <option value="企业日志">企业日志</option>
+                                <option value="产品信息">产品信息</option>
+                                <option value="企业信息">企业信息</option>
+                                <option value="企业文化">企业文化</option>
+                                <option value="企业留言">企业留言</option>
+                                <option value="企业访客">企业访客</option>
+                            </select>
+                        </p>
+                        <table id="visitorSingleList">
+                            <thead>
+                                <tr>
+                                    <th data-field="iphoto">    </th>
+                                    <th data-field="staffName"> </th>
+                                    <th data-field="mudularName">   </th>
+                                    <th data-field="com_name">  </th>
+                                    <th data-field="createTime">    </th>
+                                    <th data-field="option">    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <br/>
+                        <p class="clearfix">
+                            <button class="visitorSingleNext pull-right">下一页</button>
+                        </p>
+                    </div>
+                </div>
+                <!-- 采购需求 -->
+                <div class="comPurchaseDiv" id="comPurchaseDiv">
+                    <p class="clearfix">
+                        <button class="addDemand pull-right">
+                            <img src="img/2fb.png" alt=""/>
+                            发布需求
+                        </button>
+                    </p>
+                    <table id="purchaseList">
+                        <thead>
+                            <tr>
+                                <th data-field="ProductName">   </th>
+                                <th data-field="GuoBiaoCode">   </th>
+                                <th data-field="ProductType">   </th>
+                                <th data-field="DemandName">    </th>
+                                <th data-field="option">    </th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <br/>
+                    <p class="clearfix">
+                        <button class="demandLoadNext pull-right">下一页</button>
+                    </p>
+                    <!-- 添加需求 -->
+                    <div class="addDemandDiv">
+                        <form action="" class="form-inline">
+                            <label for="">
+                                <span>*</span>
+                                <span>产品名称</span>
+                                <input type="text" class="form-control" id="DemandName" autocomplete="off"/>
+                            </label>
+                            <br/>
+                            <label for="">
+                                <span>*</span>
+                                <span>产品类型</span>
+                                <input type="text" id="hangyeDemand1" autocomplete="off" data-provide="typeahead" type="text" class="form-control"/>
+                                <br/>
+                                <span>  </span>
+                                说明
+                                :
+                                <span class="desc"> </span>
+                            </label>
+                            <br/>
+                            <label for="">
+                                <span>*</span>
+                                <span>国际代码</span>
+                                <input type="text" class="form-control" id="DemandNum" autocomplete="off"/>
+                            </label>
+                            <br/>
+                            <label for="">
+                                <span>*</span>
+                                <span>需求量</span>
+                                <input type="number" class="form-control" id="DemandCount" autocomplete="off"/>
+                            </label>
+                            <br/>
+                            <label for="">
+                                <span>*</span>
+                                <span>预算价格</span>
+                                <input type="number" class="form-control" id="DemandPrice" autocomplete="off"/>
+                                元
+                            </label>
+                            <br/>
+                            <label for="">
+                                <span>*</span>
+                                <span>联系人</span>
+                                <input type="text" class="form-control" id="DemandPerson" autocomplete="off"/>
+                            </label>
+                            <br/>
+                            <label for="">
+                                <span>*</span>
+                                <span>联系电话</span>
+                                <input type="tel" class="form-control" id="DemandTel" autocomplete="off"/>
+                            </label>
+                            <br/>
+                            <label for="">
+                                <span>*</span>
+                                <span>截止日期</span>
+                                <input type="tel" class="form-control" id="DemandTime" autocomplete="off"/>
+                            </label>
+                            <br/>
+                            <label for="" class="newAddressAreaDemand">
+                                <span>*</span>
+                                <span>地址</span>
+                                <select id="proviceDemand" class="form-control">
+                                    <option value="=请选择=">=请选择=</option>
+                                </select>
+                                <select id="cityDemand" class="form-control">
+                                    <option value="=请选择=">=请选择=</option>
+                                </select>
+                                <select id="countyDemand" class="form-control">
+                                    <option value="=请选择=">=请选择=</option>
+                                </select>
+                            </label>
+                            <label for="">
+                                <span>*</span>
+                                <span>产品描述</span>
+                                <textarea name="" id="DemandDescribe" cols="70" rows="5" class="form-control">  </textarea>
+                            </label>
+                            <br/>
+                            <div class="col-lg-12 clearfix">
+                                <input type="button" value="添加产品特性指标" id="addProductTexingBtn3" class="pull-left"/>
+                                <table id="addproductList3">
+                                    <thead>
+                                        <tr>
+                                            <th data-field="IndexTypeKey">  </th>
+                                            <th data-field="IndexTypeValue">    </th>
+                                            <th data-field="IndexImage">    </th>
+                                            <th data-field="option">    </th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                                <br/>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- 添加指标项 -->
+                    <div class="addProductZhibiaoDiv3 form-inline">
+                        <label for="" id="productSecpil3">
+                            <span>产品特性指标</span>
+                            <input type="text" id="ProductTexing3" autocomplete="off" data-provide="typeahead" type="text" class="form-control ProductTexing3" placeholder="请输入关键字"/>
+                            <input type="text" class="form-control" placeholder="指标值" id="ProductTexingVal3"/>
+                            <input name="file" type="file" class="" id="imgBtn3" accept="image/jpg, image/jpeg, image/png" onchange="uploadimg2()"/>
+                            <div>
+                                <img src=" " alt=""/>
+                            </div>
+                        </label>
+                    </div>
+                    <!-- 指标项表格 -->
+                    <div class="showzhibiaoDiv">
+                        <div class="col-lg-12 clearfix">
+                            <table id="addproductList4">
+                                <thead>
+                                    <tr>
+                                        <th data-field="IndexTypeKey">  </th>
+                                        <th data-field="IndexTypeValue">    </th>
+                                        <th data-field="IndexImage">    </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                            <br/>
+                        </div>
+                    </div>
+                    <!-- 修改需求 -->
+                    <div class="changeDemandDiv">
+                        <form action="" class="form-inline">
+                            <label for="">
+                                <span>*</span>
+                                <span>产品名称</span>
+                                <input type="text" class="form-control" id="DemandName2" autocomplete="off"/>
+                            </label>
+                            <br/>
+                            <label for="">
+                                <span>*</span>
+                                <span>国际代码</span>
+                                <input type="text" class="form-control" id="DemandCode" autocomplete="off"/>
+                            </label>
+                            <br/>
+                            <label for="">
+                                <span>*</span>
+                                <span>需求种类</span>
+                                <input type="text" id="hangyeDemand1C" autocomplete="off" data-provide="typeahead" type="text" class="form-control"/>
+                                <br/>
+                                说明
+                                :
+                                <span class="desc"> </span>
+                            </label>
+                            <br/>
+                            <label for="">
+                                <span>*</span>
+                                <span>需求量</span>
+                                <input type="number" class="form-control" id="DemandCount2" autocomplete="off"/>
+                            </label>
+                            <br/>
+                            <label for="">
+                                <span>*</span>
+                                <span>预算价格</span>
+                                <input type="number" class="form-control" id="DemandPrice2" autocomplete="off"/>
+                                元
+                            </label>
+                            <br/>
+                            <label for="">
+                                <span>*</span>
+                                <span>联系人</span>
+                                <input type="text" class="form-control" id="DemandPerson2" autocomplete="off"/>
+                            </label>
+                            <br/>
+                            <label for="">
+                                <span>*</span>
+                                <span>联系电话</span>
+                                <input type="tel" class="form-control" id="DemandTel2" autocomplete="off"/>
+                            </label>
+                            <br/>
+                            <label for="">
+                                <span>*</span>
+                                <span>截止日期</span>
+                                <input type="tel" class="form-control" id="DemandTime2" autocomplete="off"/>
+                            </label>
+                            <br/>
+                            <label for="">
+                                <span>  </span>
+                                <span>原地址</span>
+                                <span class="oldAddressDemand"> </span>
+                                <span style="color:#f00">(修改出厂地，下面重新选择，也可不修改)</span>
+                            </label>
+                            <br/>
+                            <label for="">
+                                <span>*</span>
+                                <span>地址</span>
+                                <select id="proviceDemand2" class="form-control">
+                                    <option value="=请选择=">=请选择=</option>
+                                </select>
+                                <select id="cityDemand2" class="form-control">
+                                    <option value="=请选择=">=请选择=</option>
+                                </select>
+                                <select id="countyDemand2" class="form-control">
+                                    <option value="=请选择=">=请选择=</option>
+                                </select>
+                            </label>
+                            <br/>
+                            <label for="">
+                                <span>*</span>
+                                <span>需求描述</span>
+                                <textarea name="" id="DemandDescribe2" cols="70" rows="5" class="form-control"> </textarea>
+                            </label>
+                            <br/>
+                        </form>
+                    </div>
+                    <!-- 删除需求 -->
+                    <div class="deleteDemandDiv">
+                        <p>确定删除该需求?</p>
+                    </div>
+                </div>
+                <!-- 企业收藏 -->
+                <div class="comCollcctionDiv" id="comCollcctionDiv">
+                    <ul class="nav nav-pills nav-justified">
+                        <li class="active" id="collectionCom">
+                            <a href="#">
+                                <img src="img/2sc.png" class="cltCom" alt=""/>
+                                收藏的企业
+                            </a>
+                        </li>
+                        <li id="collectionProduct">
+                            <a href="#">
+                                <img src="img/2sced.png" class="cltPrt" alt=""/>
+                                收藏的产品
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- 收藏的公司 -->
+                    <div class="collectionComDiv">
+                        <table id="collectionComTable">
+                            <thead>
+                                <tr>
+                                    <th data-field="img">   </th>
+                                    <th data-field="company">   </th>
+                                    <th data-field="option">    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <br/>
+                        <p class="clearfix">
+                            <button class="collectionComNext pull-right">下一页</button>
+                        </p>
+                    </div>
+                    <!-- 收藏的产品 -->
+                    <div class="collectionProductDiv">
+                        <table id="collectionProductTable">
+                            <thead>
+                                <tr>
+                                    <th data-field="productName">   </th>
+                                    <th data-field="productImage">  </th>
+                                    <th data-field="company">   </th>
+                                    <th data-field="productPrice">  </th>
+                                    <th data-field="option">    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <br/>
+                        <p class="clearfix">
+                            <button class="collectionProductNext pull-right">下一页</button>
+                        </p>
+                    </div>
+                    <!-- 取消收藏 -->
+                    <div class="cancleCollectionDiv">
+                        <p>确定取消收藏?</p>
+                    </div>
+                </div>
+                <!-- 企业活动 -->
+                <div class="comActivityDiv" id="comActivityDiv">
+                    <p class="clearfix">
+                        <button class="addActivity pull-right">
+                            <img src="img/2fb.png" alt=""/>
+                            发布活动
+                        </button>
+                    </p>
+                    <ul class="nav nav-pills nav-justified">
+                        <li class="active" id="approvaling">
+                            <a href="#">待审批</a>
+                        </li>
+                        <li id="approvaled">
+                            <a href="#">已审批</a>
+                        </li>
+                    </ul>
+                    <table id="activityList">
+                        <thead>
+                            <tr>
+                                <th data-field="activeImg"> </th>
+                                <th data-field="activeTitle">   </th>
+                                <th data-field="activeCity">    </th>
+                                <th data-field="activer">   </th>
+                                <th data-field="option">    </th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <br/>
+                    <p class="clearfix approvalingArea">
+                        <button class="activityLoadNext pull-right">下一页</button>
+                    </p>
+                    <p class="clearfix approvaledArea">
+                        <button class="activityedLoadNext pull-right">下一页</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/layer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+                                                                 crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.14.1/dist/bootstrap-table.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=k54x8kPRjw9SiSMYbnjCSYdTdpdmtxmy"></script>
+    <script type="text/javascript" src="js/laydate.js"></script>
+    <script src="https://cdn.bootcss.com/wangEditor/10.0.13/wangEditor.min.js"></script>
+    <script type="text/javascript" src="https://ciphertrick.com/demo/jquerysession/js/jquerysession.js"></script>
+    <script type="text/javascript" src="js/change.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js"></script>
+    <script type="text/javascript" src="js/editorSpace.js?version=20190826"></script>
+    <script type="text/javascript" src="js/Purchase2.js?version=20190832"></script>
+    <script type="text/javascript" src="js/collection.js?version=20190825"></script>
+    <script class="resources library" src="js/area.js" type="text/javascript"></script>
+    <script type="text/javascript">
+                                                                    _init_area();
+                                                                </script>
+    <script type="text/javascript">
+                                                                    var Gid = document.getElementById;
+                                                                    var showArea = function() {
+                                                                        Gid('show').innerHTML = "<h3>省" + Gid('s_province').value + " - 市" +
+                                                                            Gid('s_city').value + " - 县/区" +
+                                                                            Gid('s_county').value + "</h3>"
+                                                                        Gid('s_county').setAttribute('onchange', 'showArea()');
+                                                                    };
+                                                                </script>
+</body>
+</html>

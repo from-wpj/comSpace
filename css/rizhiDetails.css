@@ -1,0 +1,392 @@
+.mainText {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 40px;
+  background-color: #edeef0;
+}
+
+.mainCenter {
+  padding: 10px 30px;
+  background-color: #fff;
+}
+
+.mainRight {
+  padding: 20px 0px;
+  width: 300px;
+  background-color: #fff;
+  display: none;
+}
+
+.qTitle {
+  border-bottom: 1px solid #eee;
+}
+
+.qTitle span {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.comInfo {
+  padding: 0 10px;
+}
+
+.comInfo p {
+  color: #969aa3;
+  font-size: 14px;
+}
+
+.comInfo p span:nth-child(1) {
+  width: 80px;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.comInfo p span:nth-child(2) {
+  max-width: 230px;
+  display: inline-block;
+}
+
+.title p:nth-child(1) {
+  text-align: center;
+  font-size: 30px;
+  line-height: 40px;
+  margin: 10px 0;
+}
+
+.infoLeft {
+  padding: 20px 40px 10px 40px;
+  color: #828282;
+}
+
+.infoLeft img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 20px
+}
+
+.LTime {
+  margin-right: 15px;
+}
+
+.title span {
+  color: #828282;
+}
+
+.title p a {
+  text-decoration: none;
+  margin-right: 10px;
+  color: #828282;
+}
+
+.title p a span {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.fouceBtn2 {
+  background-color: #42c02e;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 18px;
+  height: 40px;
+  outline: none;
+}
+
+.show-footer p span:nth-child(1) {
+  display: inline-block;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.show-footer p {
+  color: #9b9b9b
+}
+
+.reportDetails {
+  display: none;
+  padding: 20px;
+}
+
+#reportForm label {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: left;
+  padding-left: 40px;
+}
+
+#reportForm label span {
+  margin-left: 5px;
+}
+
+.follow-detail {
+  background-color: #fff;
+  width: 800px;
+  margin-top: 60px;
+}
+
+@media (max-width: 800px) {
+  .follow-detail {
+    width: 100%;
+  }
+  .infoLeft {
+    padding: 10px;
+  }
+  .LTime {
+    margin-right: 5px;
+  }
+  .infoLeft p a {
+    margin-right: 4px;
+    width: 40px;
+  }
+  .infoLeft p a span {
+    margin-left: 2px;
+  }
+  .show-footer p span:nth-child(1) {
+    margin-right: 2px;
+  }
+  .fouceBtn2 {
+    margin-right: 10px;
+  }
+}
+
+.circleMore {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.circleMore button {
+  width: 48%;
+  color: #ea6f5a;
+  border: 1px solid #ea6f5a;
+  border-radius: 25px;
+  height: 50px;
+  outline: none;
+}
+
+.circleMore button span {
+  font-size: 12px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+@media (max-width: 800px) {
+  .circleMore button {
+    height: 35px;
+  }
+}
+
+.circleShare {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.circleShare button {
+  width: 32%;
+  color: #ea6f5a;
+  border: 1px solid #ea6f5a;
+  border-radius: 25px;
+  height: 50px;
+  outline: none;
+}
+
+#output {
+  display: none;
+}
+
+#WriterComment {
+  height: 80px;
+}
+
+#WriterCommentChild,
+#WriterfirstComment {
+  margin-right: 60px;
+  margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .circleShare {
+    display: none;
+  }
+  #WriterComment,
+  #WriterfirstComment {
+    margin-top: 20px;
+    height: 100px;
+  }
+}
+
+.lanuchBtnList,
+.lanuchBtnList2,
+.lanuchfirstBtnList {
+  margin: 20px 0;
+}
+
+.lanuchBtnList button,
+.lanuchBtnList2 button,
+.lanuchfirstBtnList button {
+  border: none;
+  height: 40px;
+  margin-right: 20px;
+  width: 80px;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #29e;
+  outline: none;
+}
+
+.lanuchBtnList .canBtn,
+.lanuchBtnList2 .canBtn,
+.lanuchfirstBtnList .canfirstBtn {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #29e;
+}
+
+.commentList > div {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #000;
+}
+
+.commentList > div img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+
+.comContent {
+  margin: 10px auto;
+  font-size: 16px;
+}
+
+.comContent {
+  padding-left: 10px;
+}
+
+#huifu {
+  padding-left: 20px
+}
+
+#huifu2 {
+  padding-left: 40px
+}
+
+#huifu3 {
+  padding-left: 60px
+}
+
+#huifu span,
+#huifu2 span,
+#huifu3 span {
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+#huifu a,
+#huifu2 a,
+#huifu3 a {
+  text-decoration: none;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  #huifu a,
+  #huifu2 a,
+  #huifu3 a {
+    margin-right: 15px
+  }
+  .jiathis_style_32x32 {
+    display: none;
+  }
+}
+
+.huifuzhe,
+.pinglunzhe {
+  color: #29e;
+  display: inline-block;
+}
+
+.pinglunzhe {
+  margin: 0 10px;
+}
+
+.cContent {
+  word-wrap: break-word;
+  cursor: pointer;
+}
+
+.delDisTable,
+.delDisTable2 {
+  display: none;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.delcDis,
+.delDis {}
+
+#huifu3 .huifuTime {
+  color: #828282;
+}
+
+.loadMoreBtn,
+.loadMoreComment,
+.noMoreBtn {
+  width: 100%;
+  height: 40px;
+  background-color: #29e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  display: none;
+  outline: none;
+}
+
+.noMoreBtn {
+  background-color: #828282;
+}
+
+.loadMoreBtn {
+  width: 80px;
+  height: 20px;
+  color: #0aa;
+  background-color: #fff;
+}
+
+/*下载按钮*/
+
+.downloadBtn {
+  background-color: #29e;
+  border: none;
+  border-radius: 5px;
+  line-height: 30px;
+  padding: 0 15px;
+  display: none;
+}
+
+.downloadBtn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .downloadBtn {
+    display: block;
+    width: 20%;
+    margin-top: 15px;
+    line-height: 30px;
+    margin-right: 20px;
+  }
+}
+
+.lookMore {
+  cursor: pointer;
+}

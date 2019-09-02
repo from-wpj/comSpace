@@ -1,0 +1,57 @@
+body {
+	min-width: 1200px;
+	background-color: #edeef0;
+}
+
+.navTitle {
+	width: 100%;
+	height: 70px;
+	line-height: 40px;
+	border-bottom: 0.5px solid #eee;
+	background-color: #262626;
+}
+
+.userImg {
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+	border-radius: 15px;
+}
+
+.quitOut img {
+	vertical-align: text-bottom;
+}
+
+.topRight span {
+	text-decoration: none;
+	margin: 0 5px;
+	cursor: pointer;
+}
+
+.main {
+	margin: 0 auto;
+	padding-top: 20px;
+	min-height: auto;
+	width: 1200px;
+	min-width: 1200px;
+}
+
+.logoArea img {
+	width: 45px;
+	height: 45px;
+	border-radius: 18px;
+	margin: 2px 20px 2px 0
+}
+
+.navContent {
+	width: 1200px;
+	min-width: 1200px;
+	margin: 0 auto;
+	height: 70px;
+	line-height: 70px;
+	color: silver;
+	font-size: 16px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}

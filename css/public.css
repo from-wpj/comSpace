@@ -1,0 +1,365 @@
+/* 导航滑块 */
+@import url(https: //fonts.googleapis.com/css?family=Roboto);
+body {
+	min-width: 1200px;
+	background-color: #edeef0;
+}
+
+.navTitle {
+	width: 100%;
+	height: 70px;
+	line-height: 40px;
+	border-bottom: 0.5px solid #eee;
+	background-color: #262626;
+}
+
+.topRight img {
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+	border-radius: 15px;
+}
+
+.topRight span {
+	text-decoration: none;
+	margin: 0 5px;
+	cursor: pointer;
+}
+
+.main {
+	margin: 0 auto;
+	padding-top: 20px;
+	min-height: auto;
+	width: 1200px;
+	min-width: 1200px;
+
+}
+
+.logoArea img {
+	width: 45px;
+	height: 45px;
+	border-radius: 18px;
+	margin: 2px 20px 2px 0
+}
+
+.navContent {
+	width: 1200px;
+	min-width: 1200px;
+	margin: 0 auto;
+	height: 70px;
+	line-height: 70px;
+	color: silver;
+	font-size: 16px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+section#nav-test {
+	width: 60%;
+	min-width: 60%;
+	height: 100vh;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+section#nav-test #nav-container {
+	position: relative;
+	margin: 60px auto;
+	box-sizing: border-box;
+}
+
+section#nav-test #nav-container ul {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin: 0;
+}
+
+section#nav-test #nav-container ul li {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	line-height: 24px;
+	cursor: pointer;
+}
+
+section#nav-test #nav-container ul li:first-child {
+	margin-left: 0;
+}
+
+section#nav-test #nav-container ul li a {
+	text-decoration: none;
+}
+
+section#nav-test #nav-container #line {
+	position: absolute;
+	height: 2px;
+	width: 120px !important;
+	margin-top: 16px;
+	background: #0c3f8f;
+	-webkit-transition: all 150ms ease-in-out;
+	transition: all 150ms ease-in-out;
+}
+
+section#nav-test h1 {
+	margin-top: 30px;
+	font-weight: 500;
+	color: #212121;
+}
+
+/* /导航滑块 */
+
+/* public */
+.content {
+	width: 100%;
+	background-color: #002F82;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 124px;
+	
+}
+
+.content, .listbar, .middle, .middleContent {
+	
+}
+
+body {
+	min-width: 1142px;
+}
+
+.contener {
+	width: 60%;
+	min-width: 770px;
+	color: white;
+}
+
+.contentl {
+	width: 30%;
+	float: left;
+}
+
+.logo {
+	float: left;
+	margin-right: 20px;
+	width: 63px;
+	height: 63px;
+}
+
+.contentl p:first-child {
+	font-size: 24px;
+}
+
+.contentr {
+	float: right;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contentr ul {
+	display: flex;
+	justify-content: cenetr;
+	align-items: center;
+	background-color: rgb(0, 47, 132);
+}
+
+.contentr ul li {
+	float: left;
+	list-style: none;
+	width: 90px;
+	border-right: 1px solid white;
+	height: 60px;
+	cursor: pointer;
+
+}
+
+.contentr ul li:nth-child(4) {
+	border: none;
+}
+
+.contentr ul li:nth-child(5) {
+	border: none;
+	background-color: white;
+	color: black;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	height: 80px;
+}
+
+.contentr ul li p {
+	text-align: center;
+	width: 100%;
+
+}
+
+.contentr ul li p:first-child {
+	font-size: 24px;
+}
+
+.listbar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 60px;
+	background-color: #fff;
+}
+
+.listbar ul li {
+	float: left;
+	width: 120px;
+	border-right: 1px solid silver;
+	text-align: center;
+}
+
+.listbar ul li:nth-child(7) {
+	border: none;
+}
+
+.middle {
+	width: 100%;
+	background-color: rgb(238, 238, 238);
+	display: flex;
+	justify-content: center;
+}
+
+.middlel {
+	width: 25%;
+	float: left;
+	min-width: 285px;
+}
+
+.middleContent {
+	width: 60%;
+	margin-top: 35px;
+}
+
+.middler {
+	width: 72%;
+	float: left;
+	min-width: 640px;
+	margin-left: 3%;
+}
+
+.inforContent p {
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.information {
+	color: white;
+	margin-top: 10px;
+}
+
+.inforContent {
+	padding: 26px 28px;
+	background-color: rgb(17, 48, 109);
+}
+
+.companyList {
+	width: 250px
+}
+
+.cpltl {
+	float: left;
+}
+
+.cpltr {
+	float: left;
+	width: 170px;
+	height: 40px;
+	margin-left: 10px;
+}
+
+.cpltr p {
+	width: 100%;
+	height: 100%;
+	text-align: left;
+}
+
+#companyTable {
+	background-color: white;
+	/* width: 25%; */
+	min-width: 100%;
+}
+
+#companyTable thead {
+	width: 100%;
+	border-radius: 4px;
+	overflow: hidden;
+	display: inline-table;
+}
+
+#companyTable thead tr {
+	background-color: #00368a;
+	width: 100%;
+	color: white;
+}
+
+#companyTable tr {
+	background-color: white;
+	width: 100%;
+	cursor: pointer;
+}
+
+.bgbox {
+	background-color: rgb(238, 238, 238);
+	height: 20px;
+}
+
+.fixed-table-body {
+	/* 去除滚动条 */
+	overflow: visible !important;
+}
+
+.logoimg {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+
+.comName {
+	color: rgb(106, 106, 106);
+	line-height: 60px;
+	word-break: keep-all;
+	/* 不换行*/
+	white-space: nowrap;
+	/* 不换行 */
+	overflow: hidden;
+	/* 内容超出宽度时隐藏超出部分的内容 */
+	text-overflow: ellipsis;
+	/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+}
+
+.collect {
+	cursor: pointer;
+}
+
+/* /public */
+
+

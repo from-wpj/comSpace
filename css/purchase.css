@@ -1,0 +1,88 @@
+#purchase{
+	background-color: white;
+}
+#purchase thead{
+	display: none!important;
+    
+}
+#purchase tbody{
+	width: 90%;
+    display: block;
+    margin-left: 5%;
+}
+#purchase tbody tr td{
+	display: block;
+}
+#purchase tbody tr{
+	display: block;
+    border-bottom: 1px solid lavender;
+    padding: 20px 0;
+	cursor: pointer;
+}
+.purBox{
+	display: flex;
+	align-items: center;
+}
+.purl{
+	width: 85%;
+	margin-right: 15px;
+	
+}
+.budget{
+	margin-top: -10px;
+}
+.budget label{
+	color: #e19a40;
+	font-size: 24px;
+	font-style: italic;
+	padding: 0 8px;
+}
+.purr{
+	background-color: #E19A40;
+	color: white;
+	font-size: 14px;
+	padding: 10px 20px;
+}
+.purlt{
+	font-size: 18px;
+}
+.purlm{
+	display: flex;
+	margin-top: 10px;	
+}
+
+.purlm div:nth-child(1){
+	width: 60%;
+	font-size: 14px;
+	color: #aaa;
+}
+.purlm div:nth-child(2){
+	width: 40%;
+	font-size: 14px;
+	color: #aaa;
+	
+}
+.fixed-table-pagination{
+	background-color: white;
+	display: flex;
+    justify-content: space-around;
+}
+
+
+
+.pageBtnBox{
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+	background-color: white;
+}
+.pageBtn{
+	width: 20%;
+    font-size: 14px;
+}
+.labtext {
+	font-size: 16px;
+	color: rgb(106, 106, 106);
+	padding: 20px 0px 10px 5%;
+    border-bottom: 1px solid lavender;
+}

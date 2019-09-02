@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<link rel="icon" href="img/pic.ico" type="image/x-icon" />
+		<title>买方列表</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css">
+		<link rel="stylesheet" href="css/skin/default/layer.css">
+		<link rel="stylesheet" href="css/bootstrap-table.min.css">
+		<link rel="stylesheet" href="css/lookBuyList.css?ver=20180803">
+	</head>
+	<body>
+		<div class="main">
+			<div class="mainLeft col-lg-3 col-md-3 col-sm-2 col-xs-0"></div>
+			<div class="mainCenter col-lg-6 col-md-6 col-sm-8 col-xs-12">
+				<div class="content">
+					<p class="clearfix"><button id="addBuyDeyails" class="pull-right">添加买方信息</button></p>
+					<div class="col-lg-12">
+						<table id="productProvideList">
+							<thead>
+								<tr>
+									<th data-field="ProductName"></th>
+									<th data-field="GuoBiaoCode"></th>
+									<th data-field="ProductType"></th>
+									<th data-field="ProductDesc"></th>
+									<th data-field="indexList"></th>
+									<th data-field="option"></th>
+								</tr>
+							</thead>
+						</table><br>
+					</div>
+				</div>
+				<!-- 添加指标项 -->
+				<div class="addProductZhibiaoDiv form-inline">
+					<label for=""><span></span></label>
+					<label for="" id="productSecpil">
+						<span>产品特性指标</span>
+						<input type="text" id="ProductTexing" autocomplete="off" data-provide="typeahead" type="text" class="form-control ProductTexing"
+						 placeholder="请输入关键字">
+						<input type="text" class="form-control" placeholder="指标值" id="ProductTexingVal">
+						<input name="file" type="file" id="imgBtn" accept="image/jpg, image/jpeg, image/png" onchange="uploadimg()">
+						<div><img src="" alt=""></div>
+					</label>
+				</div>
+				<!-- 删除指标项 -->
+				<div class="deleteProductDiv">
+					<p>确认删除该指标项</p>
+				</div>
+				<!-- 修改买方信息 -->
+				<div class="changeProvideDiv form-inline">
+					<label for=""><span>产品名称</span><input type="text" class="form-control provideName"></label>
+					<label for=""><span>产品国际代码</span><input type="text" class="form-control provideCode"></label>
+					<label for=""><span>产品描述</span>
+						<textarea name="" id="provideDesc" cols="90" rows="5" class="form-control"></textarea>
+					</label>
+					<label for=""><span>产品类型</span>
+						<input type="text" class="form-control oldprovideType" id="hangyeProvide1" autocomplete="off" data-provide="typeahead"
+						 type="text"><br>说明 : <span class="desc"></span>
+					</label>
+				</div>
+				<!-- 添加供货方 -->
+				<div class="addprovideInfoDiv form-inline">
+					<label for=""><span>供方产品名称</span><input type="text" class="form-control productProvideName"></label>
+					<label for=""><span>供方国标代码</span><input type="text" class="form-control productProvideCode"></label>
+					<label for=""><span>供方产品类型</span>
+						<input type="text" id="hangye1" autocomplete="off" data-provide="typeahead" type="text" class="form-control"
+						 placeholder="请输入关键字"><br>说明 : <span class="desc"></span>
+					</label>
+					<label for=""><span>供方产品描述</span>
+						<textarea name="" id="productProvideDesc" cols="90" rows="5" class="form-control"></textarea>
+					</label>
+					<p><span>产品特性指标</span></p>
+					<div class="col-lg-12 clearfix">
+						<button class="pull-left" id="addProductTexingBtn2">添加产品特性指标</button>
+						<table id="addproductList2">
+							<thead>
+								<tr>
+									<th data-field="indexTypeKey"></th>
+									<th data-field="indexTypeValue"></th>
+									<th data-field="indexImage"></th>
+									<th data-field="option"></th>
+								</tr>
+							</thead>
+						</table><br>
+					</div>
+					<p>
+					</p>
+				</div>
+				<!-- 指标项表格 -->
+				<div class="showzhibiaoDiv">
+					<div class="col-lg-12 clearfix">
+						<button class="pull-left" id="addProductTexingBtn3">添加产品特性指标</button>
+						<table id="addproductList3">
+							<thead>
+								<tr>
+									<th data-field="IndexTypeKey"></th>
+									<th data-field="IndexTypeValue"></th>
+									<th data-field="IndexImage"></th>
+									<th data-field="option"></th>
+								</tr>
+							</thead>
+						</table><br>
+					</div>
+				</div>
+				<!-- 删除指标项 -->
+				<div class="deleteZhibiaoDiv">
+					<p>确定删除该指标项？</p>
+				</div>
+			</div>
+			<div class="mainRight col-lg-3 col-md-3 col-sm-2 col-xs-0"></div>
+		</div>
+		<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdn.bootcss.com/layer/3.1.0/layer.js"></script>
+		<script type="text/javascript" src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://cdn.bootcss.com/bootstrap-table/1.11.1/bootstrap-table.js"></script>
+		<script type="text/javascript" src="js/bootstrap-table-zh-CN.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap3-typeahead.min.js"></script>
+		<script type="text/javascript" src="js/change.js"></script>
+		<script type="text/javascript" src="js/lookBuyList.js?ver=20180803"></script>
+	</body>
+</html>

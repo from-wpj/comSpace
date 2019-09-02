@@ -1,0 +1,172 @@
+.middler {
+	width: 72%;
+	float: left;
+	min-width: 640px;
+	margin-left: 3%;
+}
+
+.inforContent p {
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.information {
+	color: white;
+	margin-top: 10px;
+}
+
+.inforContent {
+	padding: 26px 28px;
+	background-color: rgb(17, 48, 109);
+}
+
+.lybox {
+
+	height: 404px;
+	background-color: white;
+}
+
+.textarea {
+	width: 90%;
+	height: 200px;
+	background-color: rgb(238, 238, 238);
+	margin: 20px 5%;
+	text-align: left;
+	padding: 20px 0 0 20px;
+}
+
+.labtext {
+	font-size: 16px;
+	color: rgb(106, 106, 106);
+	padding: 20px 0px 10px 5%;
+	border-bottom: 1px solid lavender;
+
+}
+
+.submit {
+	/* background-color: rgb(0, 54, 138); */
+	width: 120px;
+	height: 40px;
+	text-align: center;
+	color: white;
+	border: none;
+	margin-left: 5%;
+}
+
+.companyList {
+	width: 250px
+}
+
+.cpltl {
+	float: left;
+
+}
+
+.cpltr {
+	float: left;
+	width: 170px;
+	height: 40px;
+	margin-left: 10px;
+
+}
+
+.cpltr p {
+	width: 100%;
+	height: 100%;
+	text-align: left;
+}
+
+
+#companyInforTable {
+	display: flex;
+	background-color: white;
+	border: 1px solid transparent !important;
+}
+
+#companyInforTable thead {
+	display: none !important;
+}
+
+#companyInforTable tbody {
+	width: 90%;
+	margin-left: 5%;
+}
+
+#companyInforTable tbody tr {
+	background-color: white;
+	display: flex;
+	border-bottom: 1px solid lavender;
+	padding: 20px 0;
+}
+
+#companyInforTable tbody td {
+	width: 100%;
+	display: block;
+}
+
+
+
+
+.listl {
+	float: left;
+	width: 80%;
+}
+
+.listr {
+	float: right;
+}
+
+.logopic {
+	width: 63px;
+	height: 63px;
+	float: left;
+	border-radius: 50%;
+}
+
+.logobox {
+	float: left;
+}
+
+.logoname {
+	float: left;
+	margin-left: 20px;
+	width: 80%;
+}
+
+.reply {
+	background-color: rgb(238, 238, 238);
+	width: 89%;
+	float: right;
+	font-size: 14px;
+	padding: 10px;
+}
+
+.lab {
+	color: silver;
+}
+
+.replybox {
+	padding-bottom: 10px;
+}
+
+.collect {
+	cursor: pointer;
+}
+.fixed-table-pagination {
+	background-color: white;
+	display: flex;
+	justify-content: space-around;
+}
+
+.pageBtnBox {
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+	background-color: white;
+}
+
+.pageBtn {
+	width: 20%;
+	font-size: 14px;
+}
